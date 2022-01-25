@@ -1,9 +1,8 @@
-Het is mogelijk om bijvoorbeeld door middel van Effects bestaande elementent "uit te breiden".
+# A11yEffect - Xamarin implementation
 
-Hieronder een voorbeeld van een effect die gebruikt wordt om A11Y elementen die ontbreken in standaard Xamarin Forms elementen toe te voegen.
+With effects it is possible to "extend" existing elements. Below is an example of an effect used to add accessibility (A11Y) features to Xamarin Forms.
 
-### <a id="A11YEffect"></a> A11YEffect
-```c#
+```csharp
 using Project.Common.Constants;
 using System.Linq;
 using Xamarin.Forms;
@@ -47,7 +46,8 @@ namespace Project.Common.Effects
 }
 ```
 
-### <a id="A11YControlTypes"></a> A11YControlTypes
+In addition, an enum needs to be defined with the A11YControlTypes:
+
 ```c#
 using System;
 namespace Project.Common.Effects
@@ -66,14 +66,13 @@ namespace Project.Common.Effects
 }
 ```
 
-Een voorbeeld voor een groepsnaam:
+Example of a group name:
 
-```c#
-        public const string A11YEffectGroupName = "Project.A11Y.Effect";
+```csharp
+public const string A11YEffectGroupName = "Project.A11Y.Effect";
 ```
 
-In de platform specifieke projecten (iOS en Android) worden bovenstaand effect verder uitgewerkt:
+In the platform specific files you can find the Android and iOS implementation:
 
-Android: [implementatie in Android](./A11yEffect_Android.md)
-
-iOS: [implementatie in iOS](./A11yEffect_iOS.md)
+* [A11YEffect on Android](./A11yEffect_Android.md)
+* [A11YEffect on iOS](./A11yEffect_iOS.md)

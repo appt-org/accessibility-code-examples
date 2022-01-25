@@ -1,8 +1,9 @@
-# iOS
-Hieronder de iOS implementatie van bovenstaand interface:
+# A11YService - iOS implementation
+
+You can find the iOS implementation of A11YService below:
 
 ``` csharp
-// de benodigde "using"s weggelaten
+// TODO: Add required imports
 [assembly: Dependency(typeof(A11YService))]
 namespace Project.iOS.Services
 {
@@ -45,17 +46,9 @@ namespace Project.iOS.Services
     }
 }
 
-```
+The above code depends on the `GetViewForAccessibility()` iOS extension on `Xamarin.Forms.VisualElement`:
 
-Hierboven wordt gebruik gemaakt van 
-
-``` csharp
-    var nativeView = visualElement.GetViewForAccessibility();
-```
-
-dit is Extension op Xamarin.Forms.VisualElement, hieronder de code:
-
-``` csharp
+```csharp
 using UIKit;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;

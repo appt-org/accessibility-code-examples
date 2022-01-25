@@ -1,7 +1,8 @@
 
-Hieronder vind je de Android implementatie van het A11yEffec t
+# A11yEffect - Android implementation
+You can find the Android implementation of A11yEffect below:
 
-``` c#
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Linq;

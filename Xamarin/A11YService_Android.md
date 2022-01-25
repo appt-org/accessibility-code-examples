@@ -1,8 +1,9 @@
-# Android
-Hieronder de Android implementatie van bovenstaand interface:
+# A11YService - Android implementation
+
+You can find the iOS implementation of A11YService below:
 
 ``` csharp
-// de benodigde "using"s weggelaten
+// TODO: Add required imports
 [assembly: Dependency(typeof(A11YService))]
 namespace Project.Droid.Services
 {
@@ -84,20 +85,12 @@ namespace Project.Droid.Services
             }
         }
     }
-
 }
-
 ```
 
-Hierboven wordt gebruik gemaakt van 
+The above code depends on the `GetViewForAccessibility()` Android extension on `Xamarin.Forms.VisualElement`:
 
-``` csharp
-    var view = visualElement.GetViewForAccessibility();
-```
-
-dit is Extension op Xamarin.Forms.VisualElement, hieronder de code:
-
-``` csharp
+```csharp
 using Android.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;

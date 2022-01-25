@@ -1,6 +1,8 @@
-Hieronder vind je de iOS implementatie van het A11yEffect
+# A11yEffect - iOS implementation
 
-``` c#
+You can find the iOS implementation of A11yEffect below:
+
+```csharp
 using System;
 using System.Linq;
 using System.Threading.Tasks;
@@ -187,4 +189,5 @@ namespace Project.iOS.Effects
     }
 }
 ```
+
 See also [AutomationProperties](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/accessibility/automation-properties)

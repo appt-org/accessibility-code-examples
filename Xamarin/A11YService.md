@@ -1,37 +1,35 @@
-Onderstaand interface maakt het mogelijk om generiek, platform specifiek code uit te voeren:
+# A11YService - Xamarin implementation
 
-Voorbeeld:
+This interface makes it possible to execute methods of platform specific accessibility services.
 
-``` csharp
-    if (DependencyService.Get<IA11YService>().IsInVoiceOverMode())
-        DependencyService.Get<IA11YService>().Speak("tekst", 500);
-```
-
-
-``` csharp
+```csharp
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace Project.Common.Services
 {
-    public interface IA11YServicee
+    public interface IA11YService
     {
-        // Staat VoiceOver(iOS) of Talkback (Android) aan
+        // Check if VoiceOver (iOS) or TalkBack (Android) is on
         bool IsInVoiceOverMode();
-        // Meegegeven 'text' wordt uitgesproken na de meegegeven pauze ('pauseInMs')
+        // Announces the given text after the given delay in milliseconds
         Task Speak(string text, int pauseInMs = 0);
-        // Het systeem op de hoogte stellen dat er een nieuwe pagina getoond wordt
+        // Notifies the system that a new page is displayed
         void NotifyForNewPage();
-        // Probeer de focus op meegegeven 'visualElement' te zetten
+        // Attempts to move the focus to the given visual element
         void ChangeA11YFocus(VisualElement visualElement);
     }
 }
 ```
 
-Runtime wordt dan de platformspecifieke code aangeroepen:
+Example of detecting screen reader and announcing text:
 
-# Android
-Zie [Android implementatie](./A11YService_Android.md)
+```csharp
+    if (DependencyService.Get<IA11YService>().IsInVoiceOverMode())
+        DependencyService.Get<IA11YService>().Speak("Stichting Appt", 500);
+```
 
-# iOS
-Zie [iOS implementatie](./A11YService_iOS.md)
+In the platform specific files you can find the Android and iOS implementation:
+
+* [A11YService on Android](./A11YService_Android.md)
+* [A11YService on iOS](./A11YService_iOS.md)
