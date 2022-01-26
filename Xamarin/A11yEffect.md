@@ -1,4 +1,4 @@
-# A11yEffect - Xamarin implementation
+# A11YEffect - Xamarin implementation
 
 With effects it is possible to "extend" existing elements. Below is an example of an effect used to add accessibility (A11Y) features to Xamarin Forms.
 

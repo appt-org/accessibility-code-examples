@@ -1,6 +1,6 @@
-# A11yEffect - iOS implementation
+# A11YEffect - iOS implementation
 
-You can find the iOS implementation of A11yEffect below:
+You can find the iOS implementation of A11YEffect below:
 
 ```csharp
 using System;

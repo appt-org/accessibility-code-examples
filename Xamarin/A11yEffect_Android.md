@@ -1,6 +1,7 @@
 
-# A11yEffect - Android implementation
-You can find the Android implementation of A11yEffect below:
+# A11YEffect - Android implementation
+
+You can find the Android implementation of A11YEffect below:
 
 ```csharp
 using System;

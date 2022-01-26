@@ -1,5 +1,6 @@
+# OrientationExtension
 
-```c#
+```csharp
 using System;
 using Project.Common.Enums;
 using Xamarin.Essentials;
@@ -26,8 +27,7 @@ namespace Project.Common.Markup
                 DeviceDisplay.MainDisplayInfoChanged += (s, e) => {
                     var value = GetValue();
 
-                    // schrijven we de waarde behorende bij de nieuwe orientatie naar de eigenschap
-                    // waaraan deze markupextension is gekoppeld 
+                    // Write the value associated with the new orientation to the bounded markup extension
                     targetObject.SetValue(targetProperty, value);
                 };
             }
