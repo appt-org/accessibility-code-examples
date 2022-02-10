@@ -48,7 +48,7 @@ namespace Project.Common.Effects
 
 In addition, an enum needs to be defined with the A11YControlTypes:
 
-```c#
+```csharp
 using System;
 namespace Project.Common.Effects
 {

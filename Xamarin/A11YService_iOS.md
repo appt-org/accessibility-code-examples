@@ -2,7 +2,7 @@
 
 You can find the iOS implementation of A11YService below:
 
-``` csharp
+```csharp
 // TODO: Add required imports
 [assembly: Dependency(typeof(A11YService))]
 namespace Project.iOS.Services
