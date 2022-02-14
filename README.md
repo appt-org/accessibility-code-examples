@@ -6,9 +6,9 @@ Except as otherwise noted, code examples are licensed under the [MIT License](ht
 
 Jump to:
 
-- [Android](/Android)
-- [iOS](/iOS)
-- [Flutter](/Flutter)
-- [Xamarin](/Xamarin)
+- [Android](/Android#readme)
+- [iOS](/iOS#readme)
+- [Flutter](/Flutter#readme)
+- [Xamarin](/Xamarin#readme)
 
 Visit [appt.org](https://appt.org) for additional app accessibility knowledge.
