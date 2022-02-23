@@ -2,5 +2,5 @@
 
 This folder contains accessibility code examples for iOS apps.
 
-* [English](/en#readme)
-* [Dutch](/nl#readme)
+* [English](en#readme)
+* [Dutch](nl#readme)
