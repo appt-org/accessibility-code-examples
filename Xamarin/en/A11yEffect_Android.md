@@ -1,4 +1,3 @@
-
 # A11YEffect - Android implementation
 
 You can find the Android implementation of A11YEffect below:
