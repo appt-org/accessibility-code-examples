@@ -468,7 +468,7 @@ class TextView: UIStackView {
 
 Depending on your styling requirements, you might need some more tweaks to make everything appear correctly.
 
-Check out the full code here: [TextView.swift](https://github.com/minvws/nl-covid19-coronacheck-app-ios/blob/main/Sources/CTR/Interface/Common/TextView.swift]) and [TextElement.swift](https://github.com/minvws/nl-covid19-coronacheck-app-ios/blob/main/Sources/CTR/Interface/Common/TextElement.swift).
+Check out the full code here: [TextView.swift](https://github.com/minvws/nl-covid19-coronacheck-app-ios/blob/main/Sources/CTR/Interface/Common/TextView.swift) and [TextElement.swift](https://github.com/minvws/nl-covid19-coronacheck-app-ios/blob/main/Sources/CTR/Interface/Common/TextElement.swift).
 
 ## Acknowledgements
 
