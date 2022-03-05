@@ -1,6 +1,6 @@
 # A11YEffect - iOS implementation
 
-You can find the iOS implementation of A11YEffect below:
+Je kunt de implementatie van A11YEffect voor iOS hieronder vinden:
 
 ```csharp
 using System;
@@ -190,4 +190,4 @@ namespace Project.iOS.Effects
 }
 ```
 
-See also [AutomationProperties](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/accessibility/automation-properties)
+Zie ook [AutomationProperties](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/accessibility/automation-properties)

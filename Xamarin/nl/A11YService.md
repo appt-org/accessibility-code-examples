@@ -1,6 +1,6 @@
 # A11YService - Xamarin implementation
 
-This interface makes it possible to execute methods of platform specific accessibility services.
+Deze interface maakt het mogelijk om methoden van platformspecifieke toegankelijkheidsservices uit te voeren.
 
 ```csharp
 using System.Threading.Tasks;
@@ -22,14 +22,14 @@ namespace Project.Common.Services
 }
 ```
 
-Example of detecting screen reader and announcing text:
+Voorbeeld van detecteren van schermlezer en aankondigingstekst:
 
 ```csharp
 if (DependencyService.Get<IA11YService>().IsInVoiceOverMode())
     DependencyService.Get<IA11YService>().Speak("Stichting Appt", 500);
 ```
 
-In the platform specific files you can find the Android and iOS implementation:
+In de platformspecifieke bestanden vind je de implementatie voor Android en iOS:
 
-* [A11YService on Android](./A11YService_Android.md)
-* [A11YService on iOS](./A11YService_iOS.md)
+* [A11YService op Android](./A11YService_Android.md)
+* [A11YService op iOS](./A11YService_iOS.md)

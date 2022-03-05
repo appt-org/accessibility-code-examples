@@ -1,6 +1,6 @@
 # A11YService - iOS implementation
 
-You can find the iOS implementation of A11YService below:
+Je kunt de implementatie van A11YService voor iOS hieronder vinden:
 
 ```csharp
 // TODO: Add required imports

@@ -1,6 +1,6 @@
 # A11YEffect - Xamarin implementation
 
-With effects it is possible to "extend" existing elements. Below is an example of an effect used to add accessibility (A11Y) features to Xamarin Forms.
+Met Effects is het mogelijk om bestaande elementen "uit te breiden". Hieronder zie je een voorbeeld van een effect dat wordt gebruikt om toegankelijkheidsfuncties (A11Y) toe te voegen aan Xamarin Forms.
 
 ```csharp
 using Project.Common.Constants;
@@ -46,7 +46,7 @@ namespace Project.Common.Effects
 }
 ```
 
-In addition, an enum needs to be defined with the A11YControlTypes:
+Daarnaast moet er een enum worden gedefinieerd met de A11YControlTypes:
 
 ```csharp
 using System;
