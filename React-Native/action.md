@@ -1,4 +1,4 @@
-# Success Criterion 7 - Add accessibility action
+# Add accessibility action
 
 In React Native it's possible to add alternative actions for assistive technology. We need to add two properties to the element to support these [`accessibility actions`](https://reactnative.dev/docs/accessibility#accessibility-actions): `accessibilityActions` and `onAccessibilityAction`.
 
