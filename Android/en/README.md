@@ -2,8 +2,6 @@
 
 This folder contains accessibility code examples for native Android apps. Each success criterion has it's own file. This README file contains an overview of the most important techniques.
 
-**Note:** all explanations are in Dutch, this will be translated to English in the near future.
-
 Visit [appt.org](https://appt.org/) for additional app accessibility knowledge.
 
 ## Table of Contents <!-- omit in toc -->
