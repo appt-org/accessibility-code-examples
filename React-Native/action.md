@@ -5,13 +5,13 @@ You need to add two properties to the element to support these [`accessibility a
 
 ```jsx
 <View
-	accessible
-	accessibilityRole="adjustable"
-	accessibilityActions={[{name: 'increment', label: 'Add'}]}
-	onAccessibilityAction={event => {
-		if (event.nativeEvent.actionName === 'increment') {
-			handleIncrement();
-		}
-	}}
+  accessible
+  accessibilityRole="adjustable"
+  accessibilityActions={[{name: 'increment', label: 'Add'}]}
+  onAccessibilityAction={event => {
+    if (event.nativeEvent.actionName === 'increment') {
+      handleIncrement();
+    }
+  }}
 />
 ```

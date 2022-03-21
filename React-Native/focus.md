@@ -4,16 +4,16 @@ When you open a new element on top of your current content, for example a modal,
 
 ```tsx
 function Component() {
-	const ref = useRef(null);
-	
-	function setFocus() {
-		const reactTag = findNodeHandle(ref.current);
-		
-		if (reactTag) {
-			AccessibilityInfo.setAccessibilityFocus(reactTag);
-		}
-	}
+  const ref = useRef(null);
+  
+  function setFocus() {
+    const reactTag = findNodeHandle(ref.current);
+    
+    if (reactTag) {
+      AccessibilityInfo.setAccessibilityFocus(reactTag);
+    }
+  }
 
-	return <View ref={ref} accessible accessibilityLabel="Modal" />
+  return <View ref={ref} accessible accessibilityLabel="Modal" />
 };
 ```
