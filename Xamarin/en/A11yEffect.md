@@ -74,5 +74,5 @@ public const string A11YEffectGroupName = "Project.A11Y.Effect";
 
 In the platform specific files you can find the Android and iOS implementation:
 
-* [A11YEffect on Android](./A11yEffect_Android.md)
-* [A11YEffect on iOS](./A11yEffect_iOS.md)
+* [A11YEffect on Android](./A11YEffect_Android.md)
+* [A11YEffect on iOS](./A11YEffect_iOS.md)
