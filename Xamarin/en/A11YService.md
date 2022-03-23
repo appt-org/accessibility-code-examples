@@ -26,7 +26,7 @@ Example of detecting screen reader and announcing text:
 
 ```csharp
 if (DependencyService.Get<IA11YService>().IsInVoiceOverMode())
-    DependencyService.Get<IA11YService>().Speak("Stichting Appt", 500);
+    DependencyService.Get<IA11YService>().Speak("Appt", 500);
 ```
 
 In the platform specific files you can find the Android and iOS implementation:

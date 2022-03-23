@@ -26,7 +26,7 @@ Voorbeeld van detecteren van schermlezer en aankondigingstekst:
 
 ```csharp
 if (DependencyService.Get<IA11YService>().IsInVoiceOverMode())
-    DependencyService.Get<IA11YService>().Speak("Stichting Appt", 500);
+    DependencyService.Get<IA11YService>().Speak("Appt", 500);
 ```
 
 In de platformspecifieke bestanden vind je de implementatie voor Android en iOS:
