@@ -2,6 +2,8 @@
 
 This folder contains accessibility code examples for iOS apps.
 
+Visit [appt.org](https://appt.org/) for additional app accessibility knowledge.
+
 ## Table of Contents
 
 - [Success Criterion 1.1.1 - Non-text Content](1.1.1.md)
