@@ -1,6 +1,6 @@
 # Accessibility code examples for React Native apps
 
-This folder contains accessibility code examples for iOS apps.
+This folder contains accessibility code examples for React Native apps.
 
 * [English](en#readme)
 

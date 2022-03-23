@@ -1,6 +1,6 @@
 # Codevoorbeelden voor toegankelijke Xamarin apps
 
-Deze map bevat codevoorbeelden om Xamarin apps toegankelijke te maken.
+Deze map bevat codevoorbeelden om toegankelijke Xamarin apps te bouwen.
 
 Ga naar [appt.org](https://appt.org/) voor nog meer informatie over het toegankelijk maken van apps.
 
