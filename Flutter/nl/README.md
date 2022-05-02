@@ -2,6 +2,8 @@
 
 Deze map bevat codevoorbeeelden om toegankelijke Flutter apps te ontwikkelen.
 
+Let op: in het [Engels](../en) zijn meer codevoorbeelden beschikbaar.
+
 Bezoek [appt.org](https://appt.org/) voor aanvullende informatie over het toegankelijk maken van apps.
 
 ## Inhoudsopgave
@@ -17,7 +19,7 @@ Bezoek [appt.org](https://appt.org/) voor aanvullende informatie over het toegan
 
 ## Bijdragen
 
-Er mist nog informatie over:
+De volgende succescriteria zijn nog niet naar het Nederlands vertaald:
 
 - [Success Criterion 1.2.1 - Audio-only and Video-only (Prerecorded)](1.2.1.md)
 - [Success Criterion 1.2.2 - Captions (Prerecorded)](1.2.2.md)
