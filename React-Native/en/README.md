@@ -15,6 +15,8 @@ Visit [appt.org](https://appt.org/) for additional app accessibility knowledge.
 - [Success Criterion 1.4.10 - Reflow](1.4.10.md)
 - [Success Criterion 2.4.2 - Page Titled](2.4.2.md)
 - [Success Criterion 2.4.3 - Focus Order](2.4.3.md)
+- [Success Criterion 2.4.6 - Headings and Labels](2.4.6.md)
+- [Success Criterion 2.4.7 - Focus Visible](2.4.7.md)
 - [Success Criterion 4.1.2 - Name, Role, Value](4.1.2.md)
 - [Success Criterion 4.1.3 - Status Messages](4.1.3.md)
 
@@ -46,8 +48,6 @@ Information is missing about:
 - [Success Criterion 2.4.1 - Bypass Blocks](2.4.1.md)
 - [Success Criterion 2.4.4 - Link Purpose (In Context)](2.4.4.md)
 - [Success Criterion 2.4.5 - Multiple Ways](2.4.5.md)
-- [Success Criterion 2.4.6 - Headings and Labels](2.4.6.md)
-- [Success Criterion 2.4.7 - Focus Visible](2.4.7.md)
 - [Success Criterion 2.5.1 - Pointer Gestures](2.5.1.md)
 - [Success Criterion 2.5.2 - Pointer Cancellation](2.5.2.md)
 - [Success Criterion 2.5.3 - Label in Name](2.5.3.md)
