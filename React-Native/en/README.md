@@ -26,6 +26,7 @@ Visit [appt.org](https://appt.org/) for additional app accessibility knowledge.
 - [Success Criterion 2.4.2 - Page Titled](2.4.2.md)
 - [Success Criterion 2.4.3 - Focus Order](2.4.3.md)
 - [Success Criterion 2.4.4 - Link Purpose (In Context)](2.4.4.md)
+- [Success Criterion 2.4.5 - Multiple Ways](2.4.5.md)
 - [Success Criterion 2.4.6 - Headings and Labels](2.4.6.md)
 - [Success Criterion 2.4.7 - Focus Visible](2.4.7.md)
 - [Success Criterion 2.5.1 - Pointer Gestures](2.5.1.md)
@@ -62,4 +63,3 @@ Information is missing about:
 - [Success Criterion 2.2.1 - Timing Adjustable](2.2.1.md)
 - [Success Criterion 2.2.2 - Pause, Stop, Hide](2.2.2.md)
 - [Success Criterion 2.3.1 - Three Flashes or Below Threshold](2.3.1.md)
-- [Success Criterion 2.4.5 - Multiple Ways](2.4.5.md)
