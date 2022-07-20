@@ -9,8 +9,12 @@ Visit [appt.org](https://appt.org/) for additional app accessibility knowledge.
 - [Accessibility action](action.md)
 - [Accessibility focus](focus.md)
 - [Success Criterion 1.1.1 - Non-text Content](1.1.1.md)
+- [Success Criterion 1.2.1 - Audio-only and Video-only (Prerecorded)](1.2.1.md)
+- [Success Criterion 1.2.2 - Captions (Prerecorded)](1.2.2.md)
 - [Success Criterion 1.3.1 - Info and Relationships](1.3.1.md)
 - [Success Criterion 1.3.4 - Orientation](1.3.4.md)
+- [Success Criterion 1.4.3 - Contrast (Minimum)](1.4.3.md)
+- [Success Criterion 1.4.5 - Images of Text](1.4.5.md)
 - [Success Criterion 1.4.4 - Resize text](1.4.4.md)
 - [Success Criterion 1.4.10 - Reflow](1.4.10.md)
 - [Success Criterion 2.4.2 - Page Titled](2.4.2.md)
@@ -30,8 +34,6 @@ Visit [appt.org](https://appt.org/) for additional app accessibility knowledge.
 
 Information is missing about:
 
-- [Success Criterion 1.2.1 - Audio-only and Video-only (Prerecorded)](1.2.1.md)
-- [Success Criterion 1.2.2 - Captions (Prerecorded)](1.2.2.md)
 - [Success Criterion 1.2.3 - Audio Description or Media Alternative (Prerecorded)](1.2.3.md)
 - [Success Criterion 1.2.4 - Captions (Live)](1.2.4.md)
 - [Success Criterion 1.2.5 - Audio Description (Prerecorded)](1.2.5.md)
@@ -40,8 +42,6 @@ Information is missing about:
 - [Success Criterion 1.3.5 - Identify Input Purpose](1.3.5.md)
 - [Success Criterion 1.4.1 - Use of Color](1.4.1.md)
 - [Success Criterion 1.4.2 - Audio Control](1.4.2.md)
-- [Success Criterion 1.4.3 - Contrast (Minimum)](1.4.3.md)
-- [Success Criterion 1.4.5 - Images of Text](1.4.5.md)
 - [Success Criterion 1.4.11 - Non-text Contrast](1.4.11.md)
 - [Success Criterion 1.4.12 - Text Spacing](1.4.12.md)
 - [Success Criterion 1.4.13 - Content on Hover or Focus](1.4.13.md)
