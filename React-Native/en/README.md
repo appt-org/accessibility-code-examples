@@ -27,6 +27,8 @@ Visit [appt.org](https://appt.org/) for additional app accessibility knowledge.
 - [Success Criterion 3.2.4 - Consistent Identification](3.2.4.md)
 - [Success Criterion 3.3.1 - Error Identification](3.3.1.md)
 - [Success Criterion 3.3.2 - Labels or Instructions](3.3.2.md)
+- [Success Criterion 3.3.3 - Error Suggestion](3.3.3.md)
+- [Success Criterion 3.3.4 - Error Prevention (Legal, Financial, Data)](3.3.4.md)
 - [Success Criterion 4.1.2 - Name, Role, Value](4.1.2.md)
 - [Success Criterion 4.1.3 - Status Messages](4.1.3.md)
 
@@ -60,6 +62,4 @@ Information is missing about:
 - [Success Criterion 2.5.4 - Motion Actuation](2.5.4.md)
 - [Success Criterion 3.1.1 - Language of Page](3.1.1.md)
 - [Success Criterion 3.1.2 - Language of Parts](3.1.2.md)
-- [Success Criterion 3.3.3 - Error Suggestion](3.3.3.md)
-- [Success Criterion 3.3.4 - Error Prevention (Legal, Financial, Data)](3.3.4.md)
 - [Success Criterion 4.1.1 - Parsing](4.1.1.md)
