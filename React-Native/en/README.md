@@ -11,6 +11,7 @@ Visit [appt.org](https://appt.org/) for additional app accessibility knowledge.
 - [Success Criterion 1.1.1 - Non-text Content](1.1.1.md)
 - [Success Criterion 1.2.1 - Audio-only and Video-only (Prerecorded)](1.2.1.md)
 - [Success Criterion 1.2.2 - Captions (Prerecorded)](1.2.2.md)
+- [Success Criterion 1.2.3 - Audio Description or Media Alternative (Prerecorded)](1.2.3.md)
 - [Success Criterion 1.3.1 - Info and Relationships](1.3.1.md)
 - [Success Criterion 1.3.4 - Orientation](1.3.4.md)
 - [Success Criterion 1.4.3 - Contrast (Minimum)](1.4.3.md)
@@ -32,7 +33,6 @@ Visit [appt.org](https://appt.org/) for additional app accessibility knowledge.
 
 Information is missing about:
 
-- [Success Criterion 1.2.3 - Audio Description or Media Alternative (Prerecorded)](1.2.3.md)
 - [Success Criterion 1.2.4 - Captions (Live)](1.2.4.md)
 - [Success Criterion 1.2.5 - Audio Description (Prerecorded)](1.2.5.md)
 - [Success Criterion 1.3.2 - Meaningful Sequence](1.3.2.md)
