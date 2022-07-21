@@ -19,6 +19,7 @@ Visit [appt.org](https://appt.org/) for additional app accessibility knowledge.
 - [Success Criterion 1.3.3 - Sensory Characteristics](1.3.3.md)
 - [Success Criterion 1.3.4 - Orientation](1.3.4.md)
 - [Success Criterion 1.3.5 - Identify Input Purpose](1.3.5.md)
+- [Success Criterion 1.4.1 - Use of Color](1.4.1.md)
 - [Success Criterion 1.4.3 - Contrast (Minimum)](1.4.3.md)
 - [Success Criterion 1.4.5 - Images of Text](1.4.5.md)
 - [Success Criterion 1.4.4 - Resize text](1.4.4.md)
@@ -53,7 +54,6 @@ Visit [appt.org](https://appt.org/) for additional app accessibility knowledge.
 
 Information is missing about:
 
-- [Success Criterion 1.4.1 - Use of Color](1.4.1.md)
 - [Success Criterion 1.4.2 - Audio Control](1.4.2.md)
 - [Success Criterion 1.4.11 - Non-text Contrast](1.4.11.md)
 - [Success Criterion 1.4.12 - Text Spacing](1.4.12.md)
