@@ -31,6 +31,7 @@ Visit [appt.org](https://appt.org/) for additional app accessibility knowledge.
 - [Success Criterion 2.1.1 - Keyboard](2.1.1.md)
 - [Success Criterion 2.1.2 - No Keyboard Trap](2.1.2.md)
 - [Success Criterion 2.1.4 - Character Key Shortcuts](2.1.4.md)
+- [Success Criterion 2.2.1 - Timing Adjustable](2.2.1.md)
 - [Success Criterion 2.4.1 - Bypass Blocks](2.4.1.md)
 - [Success Criterion 2.4.2 - Page Titled](2.4.2.md)
 - [Success Criterion 2.4.3 - Focus Order](2.4.3.md)
@@ -60,6 +61,5 @@ Visit [appt.org](https://appt.org/) for additional app accessibility knowledge.
 
 Information is missing about:
 
-- [Success Criterion 2.2.1 - Timing Adjustable](2.2.1.md)
 - [Success Criterion 2.2.2 - Pause, Stop, Hide](2.2.2.md)
 - [Success Criterion 2.3.1 - Three Flashes or Below Threshold](2.3.1.md)
