@@ -15,7 +15,6 @@ def read_file(file):
         text = re.sub('(##+ [\w]+)', '#\\1', text)
     return text
 
-
 # Write text to a file
 def write_file(file, text, mode):
     print('Writing to file {}'.format(file))
@@ -35,11 +34,12 @@ def write_techniques(folder, language, file):
         mode = 'a'
         insert = 0
 
-    list.insert(insert, '## {}'.format(folder))
+    language = folder.replace('-', ' ')
+    list.insert(insert, '\n## {}'.format(language))
     text = '\n'.join(list)
     write_file(file_out, text, mode)
 
-
+# For each folder, for each language, join code examples into one file
 for folder in folders:
     for language in languages:
         # Make directories to put the files in

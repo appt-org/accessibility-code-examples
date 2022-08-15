@@ -1,4 +1,5 @@
 # Important accessibility techniques for Android apps
+
 ## Android
 
 This file contains important accessibility techniques for Android apps.
@@ -453,6 +454,7 @@ These code examples are based on:
 - [nl-covid19-coronacheck-app-android](https://github.com/minvws/nl-covid19-coronacheck-app-android/commits?author=JJdeGroot), licensed under [EUPL-1.2](https://opensource.org/licenses/EUPL-1.2)
 - [nl-covid19-dbco-app-android](https://github.com/minvws/nl-covid19-dbco-app-android/commits?author=JJdeGroot), licensed under [EUPL-1.2](https://opensource.org/licenses/EUPL-1.2)
 - [nl-covid19-notification-app-android](https://github.com/minvws/nl-covid19-notification-app-android/commit/d8fb1167bd069304e42b0a50c6a983ce147cb7cd), licensed under [EUPL-1.2](https://opensource.org/licenses/EUPL-1.2)
+
 ## iOS
 
 This file contains important accessibility techniques for iOS apps.

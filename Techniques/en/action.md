@@ -1,5 +1,6 @@
 # Add accessibility action
-## React-Native
+
+## React Native
 
 In React Native accessibility actions allow an assistive technology to programmatically invoke the actions of a component.
 You need to add two properties to the element to support these [`accessibility actions`](https://reactnative.dev/docs/accessibility#accessibility-actions): `accessibilityActions` and `onAccessibilityAction`.

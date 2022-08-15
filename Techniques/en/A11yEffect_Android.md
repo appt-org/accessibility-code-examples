@@ -1,4 +1,5 @@
 # A11YEffect - Android implementation
+
 ## Xamarin
 
 You can find the Android implementation of A11YEffect below:

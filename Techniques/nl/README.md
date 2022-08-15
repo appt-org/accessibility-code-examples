@@ -1,4 +1,5 @@
 # Codevoorbeelden voor toegankelijke Android apps
+
 ## Android
 
 Deze map bevat codevoorbeelden om toegankelijke Android apps te ontwikkelen.
@@ -57,6 +58,7 @@ Bezoek [appt.org](https://appt.org/) voor aanvullende informatie over het toegan
 - [Success Criterion 4.1.1 - Parsing](4.1.1.md)
 - [Success Criterion 4.1.2 - Name, Role, Value](4.1.2.md)
 - [Success Criterion 4.1.3 - Status Messages](4.1.3.md)
+
 ## iOS
 
 Deze map bevat codevoorbeeelden om toegankelijke iOS apps te ontwikkelen.
@@ -115,6 +117,7 @@ Bezoek [appt.org](https://appt.org/) voor aanvullende informatie over het toegan
 - [Success Criterion 4.1.1 - Parsing](4.1.1.md)
 - [Success Criterion 4.1.2 - Name, Role, Value](4.1.2.md)
 - [Success Criterion 4.1.3 - Status Messages](4.1.3.md)
+
 ## Flutter
 
 Deze map bevat codevoorbeeelden om toegankelijke Flutter apps te ontwikkelen.
@@ -180,6 +183,7 @@ De volgende succescriteria zijn nog niet naar het Nederlands vertaald:
 - [Success Criterion 3.3.3 - Error Suggestion](3.3.3.md)
 - [Success Criterion 3.3.4 - Error Prevention (Legal, Financial, Data)](3.3.4.md)
 - [Success Criterion 4.1.1 - Parsing](4.1.1.md)
+
 
 ## Xamarin
 
