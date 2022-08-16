@@ -28,14 +28,14 @@ Flutter uses the [`label`](https://api.flutter.dev/flutter/semantics/SemanticsPr
 
 ```dart
 Semantics(
-  label: 'Appt'
+  label: 'Appt',
+  child: Widget();
 );
 ```
 
 ## React Native
 
 React Native uses the [`accessibilityLabel`](https://reactnative.dev/docs/accessibility#accessibilitylabel) prop as accessibility name.
-
 
 ```jsx
 <Pressable 
