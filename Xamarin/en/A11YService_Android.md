@@ -1,6 +1,6 @@
 # A11YService - Android implementation
 
-You can find the iOS implementation of A11YService below:
+You can find the Android implementation of A11YService below:
 
 ```csharp
 // TODO: Add required imports

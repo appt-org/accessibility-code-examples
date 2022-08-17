@@ -6,31 +6,56 @@ This file contains important accessibility techniques for Android apps.
 
 ### Table of Contents <!-- omit in toc -->
 
-- [1. Set accessibility label](#1-set-accessibility-label)
-- [2. Set accessibility focus](#2-set-accessibility-focus)
-- [3. Set accessibility visibility](#3-set-accessibility-visibility)
-- [4. Group accessibility elements](#4-group-accessibility-elements)
-- [5. Using AccessibilityNodeInfoCompat](#5-using-accessibilitynodeinfocompat)
-  - [5.1. Mark accessibility button](#51-mark-accessibility-button)
-  - [5.2. Mark accessibility heading](#52-mark-accessibility-heading)
-  - [5.3. Add accessibility description](#53-add-accessibility-description)
-  - [5.4. Set accessibility order](#54-set-accessibility-order)
-- [6. Using AccessibilityManager](#6-using-accessibilitymanager)
-  - [6.1. Announcing a message](#61-announcing-a-message)
-  - [6.2. Interrupt assistive technology](#62-interrupt-assistive-technology)
-  - [6.3. Check if screen reader is active](#63-check-if-screen-reader-is-active)
-- [7. Toolbar accessibility](#7-toolbar-accessibility)
-- [8. Keyboard accessibility](#8-keyboard-accessibility)
-  - [8.1. Dashed border on focus](#81-dashed-border-on-focus)
-  - [8.2. Color change on focus](#82-color-change-on-focus)
-- [9. Spanned accessibility](#9-spanned-accessibility)
-- [9.1 Split into paragraphs](#91-split-into-paragraphs)
-  - [9.2. Determine attribute values](#92-determine-attribute-values)
-    - [Detecting header style](#detecting-header-style)
-    - [Detecting list style](#detecting-list-style)
-    - [Detecting empty paragraphs](#detecting-empty-paragraphs)
-  - [9.3 Create interface elements](#93-create-interface-elements)
-- [Acknowledgements](#acknowledgements)
+- [Android](#android)
+  - [1. Set accessibility label](#1-set-accessibility-label)
+  - [2. Set accessibility focus](#2-set-accessibility-focus)
+  - [3. Set accessibility visibility](#3-set-accessibility-visibility)
+  - [4. Group accessibility elements](#4-group-accessibility-elements)
+  - [5. Using AccessibilityNodeInfoCompat](#5-using-accessibilitynodeinfocompat)
+    - [5.1. Mark accessibility button](#51-mark-accessibility-button)
+    - [5.2. Mark accessibility heading](#52-mark-accessibility-heading)
+    - [5.3. Add accessibility description](#53-add-accessibility-description)
+    - [5.4. Set accessibility order](#54-set-accessibility-order)
+  - [6. Using AccessibilityManager](#6-using-accessibilitymanager)
+    - [6.1. Announcing a message](#61-announcing-a-message)
+    - [6.2. Interrupt assistive technology](#62-interrupt-assistive-technology)
+    - [6.3. Check if screen reader is active](#63-check-if-screen-reader-is-active)
+  - [7. Toolbar accessibility](#7-toolbar-accessibility)
+  - [8. Keyboard accessibility](#8-keyboard-accessibility)
+    - [8.1. Dashed border on focus](#81-dashed-border-on-focus)
+    - [8.2. Color change on focus](#82-color-change-on-focus)
+  - [9. Spanned accessibility](#9-spanned-accessibility)
+  - [9.1 Split into paragraphs](#91-split-into-paragraphs)
+    - [9.2. Determine attribute values](#92-determine-attribute-values)
+      - [Detecting header style](#detecting-header-style)
+      - [Detecting list style](#detecting-list-style)
+      - [Detecting empty paragraphs](#detecting-empty-paragraphs)
+    - [9.3 Create interface elements](#93-create-interface-elements)
+  - [Acknowledgements](#acknowledgements)
+- [iOS](#ios)
+  - [1. Set accessibility label](#1-set-accessibility-label-1)
+  - [2. Set accessibility focus](#2-set-accessibility-focus-1)
+  - [3. Set accessibility visibility](#3-set-accessibility-visibility-1)
+  - [4. Mark accessibility button](#4-mark-accessibility-button)
+  - [5. Mark accessibility header](#5-mark-accessibility-header)
+  - [6. Add accessibility description](#6-add-accessibility-description)
+  - [7. Group accessibility elements](#7-group-accessibility-elements)
+  - [8. Set accessibility order](#8-set-accessibility-order)
+  - [9. UIFont accessibility](#9-uifont-accessibility)
+  - [10. UIButton accessibility](#10-uibutton-accessibility)
+    - [10.1. Allow multiple lines](#101-allow-multiple-lines)
+    - [10.2. Allow larger width](#102-allow-larger-width)
+  - [11. NSAttributedString accessibility](#11-nsattributedstring-accessibility)
+    - [11.1. Split into paragraphs](#111-split-into-paragraphs)
+    - [11.2. Determine attribute values](#112-determine-attribute-values)
+      - [Finding attributes](#finding-attributes)
+      - [Detecting paragraph style](#detecting-paragraph-style)
+      - [Detecting header style](#detecting-header-style-1)
+      - [Detecting list items](#detecting-list-items)
+      - [Detecting empty paragraphs](#detecting-empty-paragraphs-1)
+      - [Calculating line height](#calculating-line-height)
+    - [11.3. Create interface elements](#113-create-interface-elements)
+  - [Acknowledgements](#acknowledgements-1)
 
 ### 1. Set accessibility label
 
@@ -45,15 +70,7 @@ fun label(view: View, label: CharSequence): View {
 
 ### 2. Set accessibility focus
 
-Sometimes you want to move the accessibility focus to a specific view. You can do so by sending a `TYPE_VIEW_FOCUSED` accessibility event. The view must be focusable for this event to take effect.
-
-```kotlin
-fun focus(view: View): View {
-    view.isFocusable = true
-    view.sendAccessibilityEvent(AccessibilityEvent.TYPE_VIEW_FOCUSED)
-    return view
-}
-```
+Moved to [set accessibility focus](../set-accessibility-focus.md)
 
 ### 3. Set accessibility visibility
 
@@ -68,6 +85,7 @@ fun visible(view: View, visible: Boolean): View {
 ```
 
 ### 4. Group accessibility elements
+
 In lists and other places, it often makes sense to group multiple elements together for users of assistive technologies. For example, let's say you have a list with items containing a date and title. You can group the date and title together by using the `android:focusable` and `android:contentDescription` attributes. From Android 9 (API 28), you can also use the `android:screenReaderFocusable` to set the focusable state only for screen reader users.
 
 ```xml
@@ -461,29 +479,56 @@ This file contains important accessibility techniques for iOS apps.
 
 ### Table of Contents <!-- omit in toc -->
 
-- [1. Set accessibility label](#1-set-accessibility-label)
-- [2. Set accessibility focus](#2-set-accessibility-focus)
-- [3. Set accessibility visibility](#3-set-accessibility-visibility)
-- [4. Mark accessibility button](#4-mark-accessibility-button)
-- [5. Mark accessibility header](#5-mark-accessibility-header)
-- [6. Add accessibility description](#6-add-accessibility-description)
-- [7. Group accessibility elements](#7-group-accessibility-elements)
-- [8. Set accessibility order](#8-set-accessibility-order)
-- [9. UIFont accessibility](#9-uifont-accessibility)
-- [10. UIButton accessibility](#10-uibutton-accessibility)
-  - [10.1. Allow multiple lines](#101-allow-multiple-lines)
-  - [10.2. Allow larger width](#102-allow-larger-width)
-- [11. NSAttributedString accessibility](#11-nsattributedstring-accessibility)
-  - [11.1. Split into paragraphs](#111-split-into-paragraphs)
-  - [11.2. Determine attribute values](#112-determine-attribute-values)
-    - [Finding attributes](#finding-attributes)
-    - [Detecting paragraph style](#detecting-paragraph-style)
-    - [Detecting header style](#detecting-header-style)
-    - [Detecting list items](#detecting-list-items)
-    - [Detecting empty paragraphs](#detecting-empty-paragraphs)
-    - [Calculating line height](#calculating-line-height)
-  - [11.3. Create interface elements](#113-create-interface-elements)
-- [Acknowledgements](#acknowledgements)
+- [Android](#android)
+  - [1. Set accessibility label](#1-set-accessibility-label)
+  - [2. Set accessibility focus](#2-set-accessibility-focus)
+  - [3. Set accessibility visibility](#3-set-accessibility-visibility)
+  - [4. Group accessibility elements](#4-group-accessibility-elements)
+  - [5. Using AccessibilityNodeInfoCompat](#5-using-accessibilitynodeinfocompat)
+    - [5.1. Mark accessibility button](#51-mark-accessibility-button)
+    - [5.2. Mark accessibility heading](#52-mark-accessibility-heading)
+    - [5.3. Add accessibility description](#53-add-accessibility-description)
+    - [5.4. Set accessibility order](#54-set-accessibility-order)
+  - [6. Using AccessibilityManager](#6-using-accessibilitymanager)
+    - [6.1. Announcing a message](#61-announcing-a-message)
+    - [6.2. Interrupt assistive technology](#62-interrupt-assistive-technology)
+    - [6.3. Check if screen reader is active](#63-check-if-screen-reader-is-active)
+  - [7. Toolbar accessibility](#7-toolbar-accessibility)
+  - [8. Keyboard accessibility](#8-keyboard-accessibility)
+    - [8.1. Dashed border on focus](#81-dashed-border-on-focus)
+    - [8.2. Color change on focus](#82-color-change-on-focus)
+  - [9. Spanned accessibility](#9-spanned-accessibility)
+  - [9.1 Split into paragraphs](#91-split-into-paragraphs)
+    - [9.2. Determine attribute values](#92-determine-attribute-values)
+      - [Detecting header style](#detecting-header-style)
+      - [Detecting list style](#detecting-list-style)
+      - [Detecting empty paragraphs](#detecting-empty-paragraphs)
+    - [9.3 Create interface elements](#93-create-interface-elements)
+  - [Acknowledgements](#acknowledgements)
+- [iOS](#ios)
+  - [1. Set accessibility label](#1-set-accessibility-label-1)
+  - [2. Set accessibility focus](#2-set-accessibility-focus-1)
+  - [3. Set accessibility visibility](#3-set-accessibility-visibility-1)
+  - [4. Mark accessibility button](#4-mark-accessibility-button)
+  - [5. Mark accessibility header](#5-mark-accessibility-header)
+  - [6. Add accessibility description](#6-add-accessibility-description)
+  - [7. Group accessibility elements](#7-group-accessibility-elements)
+  - [8. Set accessibility order](#8-set-accessibility-order)
+  - [9. UIFont accessibility](#9-uifont-accessibility)
+  - [10. UIButton accessibility](#10-uibutton-accessibility)
+    - [10.1. Allow multiple lines](#101-allow-multiple-lines)
+    - [10.2. Allow larger width](#102-allow-larger-width)
+  - [11. NSAttributedString accessibility](#11-nsattributedstring-accessibility)
+    - [11.1. Split into paragraphs](#111-split-into-paragraphs)
+    - [11.2. Determine attribute values](#112-determine-attribute-values)
+      - [Finding attributes](#finding-attributes)
+      - [Detecting paragraph style](#detecting-paragraph-style)
+      - [Detecting header style](#detecting-header-style-1)
+      - [Detecting list items](#detecting-list-items)
+      - [Detecting empty paragraphs](#detecting-empty-paragraphs-1)
+      - [Calculating line height](#calculating-line-height)
+    - [11.3. Create interface elements](#113-create-interface-elements)
+  - [Acknowledgements](#acknowledgements-1)
 
 ### 1. Set accessibility label
 
@@ -498,13 +543,7 @@ func label(_ view: UIView, label: String) -> UIView {
 
 ### 2. Set accessibility focus
 
-Sometimes you want to move the accessibility focus to a specific view. You can do so by sending a `layoutChanged` accessibility notification and pass the specific view.
-
-```swift
-func focus(_ view: UIView) {
-    UIAccessibility.post(notification: .layoutChanged, argument: view)
-}
-```
+Moved to [set accessibility focus](../set-accessibility-focus.md)
 
 ### 3. Set accessibility visibility
 
