@@ -7,7 +7,7 @@ Text
 Text
 
 ```kotlin
-Code
+Not available, contribute!
 ```
 
 ## iOS
@@ -15,7 +15,7 @@ Code
 Text
 
 ```swift
-Code
+Not available, contribute!
 ```
 
 ## Flutter
@@ -23,7 +23,7 @@ Code
 Text
 
 ```dart
-Code
+Not available, contribute!
 ```
 
 ## React Native
@@ -31,7 +31,7 @@ Code
 Text
 
 ```jsx
-Code
+Not available, contribute!
 ```
 
 ## Xamarin
@@ -39,5 +39,5 @@ Code
 Text
 
 ```xml
-Code
+Not available, contribute!
 ```
