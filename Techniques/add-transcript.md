@@ -2,9 +2,9 @@
 
 A transcript is a text version which describes information shown in media, such as a video or podcast.
 
-- Basic transcript contains the speech and non-speech audio needed to understand the media. This mostly benefits people who are deaf or hard of hearing, or have difficulty processing auditory information.
-- Descriptive transcripts also includes visual information needed to understand the content. This allows people who are both deaf and blind to perceive the information.
-- Interactive transcripts highlight text phrases as they are spoken. Users can select text phrases to jump to that point in the video.
+A basic transcript contains information needed to understand what is being said. This mostly benefits people who are deaf or hard of hearing, or have difficulty processing auditory information.
+
+A descriptive transcript also contains visual information to understand what is being shown. This mostly benefits people who are blind or visually impaired.
 
 ## Android
 
