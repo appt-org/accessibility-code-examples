@@ -1,6 +1,6 @@
-# Move accessibility focus
+# Set accessibility focus
 
-When you present a new element on the screen, you might want to move accessibility focus to this element. For example, when you present a modal, the assistive technology should move it's
+When you present a new element on the screen, you might want to move theaccessibility focus to this element. For example, when you present a modal, the assistive technology should move it's
 focus to it. Or when moving to a new screen, you might want assistive technologies to focus a specific element.
 
 ## Android
@@ -26,7 +26,7 @@ func focus(_ view: UIView) {
 
 ## Flutter
 
-Flutter does not have built-in support for changing accessibility focus. See [Flutter issue 59594](https://github.com/flutter/flutter/issues/59594) for more information.
+Flutter does not have built-in support for changing accessibility focus. See [Flutter issue #59594](https://github.com/flutter/flutter/issues/59594) for more information.
 
 You could implement your own [`platform channels`](https://docs.flutter.dev/development/platform-integration/platform-channels) to call the native Android and iOS methods to move accessibility focus.
 
@@ -58,9 +58,10 @@ function Component() {
 
 ## Xamarin
 
-Xamarin Forms does not have built-in support for changing accessibility focus. By implementing a [`DependencyService`](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/dependency-service/introduction) it is possible to implement platform specific behaviour. The [`A11YService`](https://github.com/appt-org/accessibility-code-examples/blob/main/Xamarin/en/A11YService.md), [`A11YService for Android`](https://github.com/appt-org/accessibility-code-examples/blob/main/Xamarin/en/A11YService_Android.md) and [`A11YService for iOS`](https://github.com/appt-org/accessibility-code-examples/blob/main/Xamarin/en/A11YService_iOS.md) files show how to implement a `service` for changing accessibility focus.
+Xamarin Forms does not have built-in support for changing accessibility focus.
+
+The [`SemanticExtensions`](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/Extensions/Semantic/SemanticExtensions.shared.cs) file inside the [`Xamarin.CommunityToolkit`](https://github.com/xamarin/XamarinCommunityToolkit) contains the `SetSemanticFocus` method. It moves the accessibility focus to the given element on the native platform.
 
 ```csharp
-IA11YService service = DependencyService.Get<IA11YService>();
-service.ChangeA11YFocus(element)
+SemanticExtensions.SetSemanticFocus(element)
 ```

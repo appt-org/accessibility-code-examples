@@ -8,7 +8,7 @@ On Android, you can use the [`setAccessibilityDelegate`](https://developer.andro
 
 You can set a role using the [`setRoleDescription`](https://developer.android.com/reference/androidx/core/view/accessibility/AccessibilityNodeInfoCompat#setRoleDescription(java.lang.CharSequence)) method. However, we recommend using the [`setClassName`](https://developer.android.com/reference/androidx/core/view/accessibility/AccessibilityNodeInfoCompat#setClassName(java.lang.CharSequence)) method over `setRoleDescription` to support multilingual roles. For example, set `Button::class.java.name` if an element behaves like a button. The role will be set to `Button` in English, and to its respective translation in other languages.
 
-You can indicate a heading using the [`setHeading`](https://developer.android.com/reference/androidx/core/view/accessibility/AccessibilityNodeInfoCompat#setHeading(boolean)) method. `ViewCompat` also contains a convenience method: [`setAccessibilityHeading`](https://developer.android.com/reference/androidx/core/view/ViewCompat#setAccessibilityHeading(android.view.View,%20boolean)).
+You can indicate a heading by using the [`setHeading`](https://developer.android.com/reference/androidx/core/view/accessibility/AccessibilityNodeInfoCompat#setHeading(boolean)) method. `ViewCompat` also contains a convenience method: [`setAccessibilityHeading`](https://developer.android.com/reference/androidx/core/view/ViewCompat#setAccessibilityHeading(android.view.View,%20boolean)).
 
 ```kotlin
 ViewCompat.setAccessibilityDelegate(
@@ -75,7 +75,11 @@ In React Native you can use the [`accessibilityRole`](https://reactnative.dev/do
 
 ## Xamarin
 
-Xamarin Forms does not have built-in support for setting an accessibility role. By using [`Effects`](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/effects/introduction) it is possible to implement platform specific behaviour. The [`A11YEffect`](https://github.com/appt-org/accessibility-code-examples/blob/main/Xamarin/en/A11yEffect.md), [`A11YEffect for Android`](https://github.com/appt-org/accessibility-code-examples/blob/main/Xamarin/en/A11yEffect_Android.md) and [`A11YEffect for iOS`](https://github.com/appt-org/accessibility-code-examples/blob/main/Xamarin/en/A11yEffect_iOS.md) files show how to implement an `effect` for accessibility role.
+Xamarin Forms does not have built-in support for setting an accessibility role.
+
+The [`SemanticEffect`](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/Effects/Semantic/SemanticEffect.shared.cs) file inside the [`Xamarin.CommunityToolkit`](https://github.com/xamarin/XamarinCommunityToolkit) contains various methods to set accessibility roles.
+
+By using [`Effects`](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/effects/introduction) it is possible to implement platform specific behaviour. The [`A11YEffect`](https://github.com/appt-org/accessibility-code-examples/blob/main/Xamarin/en/A11yEffect.md), [`A11YEffect for Android`](https://github.com/appt-org/accessibility-code-examples/blob/main/Xamarin/en/A11yEffect_Android.md) and [`A11YEffect for iOS`](https://github.com/appt-org/accessibility-code-examples/blob/main/Xamarin/en/A11yEffect_iOS.md) files show how to implement an `effect` for accessibility role.
 
 ```xml
 <controls:CustomFontLabel

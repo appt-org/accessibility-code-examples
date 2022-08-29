@@ -44,9 +44,10 @@ AccessibilityInfo.announceForAccessibility('Appt announcement!');
 
 ## Xamarin
 
-Xamarin Forms does not have built-in support to post an accessibility announcement. By implementing a [`DependencyService`](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/dependency-service/introduction) it is possible to implement platform specific behaviour. The [`A11YService`](https://github.com/appt-org/accessibility-code-examples/blob/main/Xamarin/en/A11YService.md), [`A11YService for Android`](https://github.com/appt-org/accessibility-code-examples/blob/main/Xamarin/en/A11YService_Android.md) and [`A11YService for iOS`](https://github.com/appt-org/accessibility-code-examples/blob/main/Xamarin/en/A11YService_iOS.md) files show how to implement a `service` to make an accessibility announcement.
+Xamarin Forms does not have built-in support for changing accessibility focus.
+
+The [`SemanticExtensions`](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/Extensions/Semantic/SemanticExtensions.shared.cs) file inside the [`Xamarin.CommunityToolkit`](https://github.com/xamarin/XamarinCommunityToolkit) contains the `Announce` method. It posts an accessibility announcement on the native platform.
 
 ```csharp
-IA11YService service = DependencyService.Get<IA11YService>();
-service.Speak("Appt announcement!")
+SemanticExtensions.Announce("Appt announcement")
 ```

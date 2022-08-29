@@ -38,7 +38,7 @@ This parameter uses a [SemanticsSortKey](https://api.flutter.dev/flutter/semanti
 
 The `OrdinalSortKey` needs an `order` as double and optionally a `name` as String. The elements are then sorted by name, with empty names handled first, and subsequently by `order`.
 
-It is also possible to leave out the `sortKey`. In this case, Flutter will generate `OrdinalSortKey`'s based on a platform specific algorithm. This order is often the order you want, but make sure to verify the sequence by using an assistive technology such as the screen reader
+It is also possible to leave out the `sortKey`. In this case, Flutter will generate `OrdinalSortKey`'s based on a platform specific algorithm. This order is often the order you want, but make sure to verify the sequence by using an assistive technology such as the screen reader.
 
 ```dart
 Widget focusOrderWidget(context) {
