@@ -97,8 +97,10 @@ The code examples below shows how to enable font size scaling and how to use dyn
 
 ```csharp
 using Xamarin.Forms;
+
 [assembly: ExportFont("Lobster-Regular.ttf", Alias="Lobster")]
 [assembly: ExportFont("Lobster-Bold.ttf", Alias="LobsterBold")]
+
 namespace Project
 {
     public partial class App : Xamarin.Forms.Application
