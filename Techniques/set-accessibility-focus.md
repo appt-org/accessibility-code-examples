@@ -33,7 +33,7 @@ You could implement your own [`platform channels`](https://docs.flutter.dev/deve
 Do not use `FocusNode` or `Semantics.focused`, these methods should only be used for keyboard or input focus.
 
 ```dart
-// Changing accessibility focus is not available on Flutter
+Not available, contribute!
 ```
 
 ## React Native

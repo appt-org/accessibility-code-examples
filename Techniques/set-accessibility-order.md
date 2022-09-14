@@ -32,9 +32,9 @@ view.accessibilityElements = [header, description, list]
 
 ## Flutter
 
-For sorting the focus order in Flutter apps, the `sortKey` parameter of [Semantics](https://api.flutter.dev/flutter/semantics/SemanticsProperties-class.html) is used.
+For sorting the focus order in Flutter apps, the `sortKey` parameter of [`Semantics`](https://api.flutter.dev/flutter/semantics/SemanticsProperties-class.html) is used.
 
-This parameter uses a [SemanticsSortKey](https://api.flutter.dev/flutter/semantics/SemanticsSortKey-class.html) to sort the elements. The most common way to sort elements is the [OrdinalSortKey](https://api.flutter.dev/flutter/semantics/OrdinalSortKey-class.html), but you can also write your own implementation based on the `SemanticsSortKey` class.
+This parameter uses a [`SemanticsSortKey`](https://api.flutter.dev/flutter/semantics/SemanticsSortKey-class.html) to sort the elements. The most common way to sort elements is the [`OrdinalSortKey`](https://api.flutter.dev/flutter/semantics/OrdinalSortKey-class.html), but you can also write your own implementation based on the `SemanticsSortKey` class.
 
 The `OrdinalSortKey` needs an `order` as double and optionally a `name` as String. The elements are then sorted by name, with empty names handled first, and subsequently by `order`.
 
@@ -69,7 +69,7 @@ React Native does not have support for changing the focus order. You can use the
 More information about the lack of support for changing accessibility order can be found inside [Discussion 389](https://github.com/react-native-community/discussions-and-proposals/discussions/389) of the React Native Community.
 
 ```jsx
-// React Native does not support changing focus order
+Not available, contribute!
 ```
 
 ## Xamarin

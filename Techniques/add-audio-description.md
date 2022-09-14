@@ -4,7 +4,7 @@ Videos should include audio description when important visual details are shown 
 
 ## Android
 
-As of Android 4.1, the [`MediaPlayer`](https://developer.android.com/reference/android/media/MediaPlayer) has support for multiple audio tracks. Use the [`selectTrack`](https://developer.android.com/reference/android/media/MediaPlayer#selectTrack(int)) method to select the correct audio track. 
+As of Android 4.1, the [`MediaPlayer`](https://developer.android.com/reference/android/media/MediaPlayer) has support for multiple audio tracks. Use the [`selectTrack`](https://developer.android.com/reference/android/media/MediaPlayer#selectTrack(int)) method to select the correct audio track.
 
 The code example belows shows a basic implementation of selecting an audio description track embedded inside a video.
 
@@ -110,6 +110,7 @@ Note: The audio tracks must be encoded in the file, this is not something you ad
 
 ```jsx
 import Video from 'react-native-video';
+
 <Video
     selectedAudioTrack={{
         type: "audio-description",

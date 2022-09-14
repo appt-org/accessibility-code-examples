@@ -4,7 +4,7 @@ The challenge with live captions is both organizational and technical. A caption
 
 ## Android
 
-On Android, we recommend using a library such as [`ExoPlayer`](https://github.com/google/ExoPlayer) to support live captions. ExoPlayer is developed by Google and is an open-source alternative to Android's [`MediaPlayer`](https://developer.android.com/reference/android/media/MediaPlayer) for audio and video playback. Many code examples can be found in the [`ExoPlayer documentation`](https://exoplayer.dev/). You can use [`DefaultTrackSelector`](https://exoplayer.dev/doc/reference/index.html?com/google/android/exoplayer2/trackselection/DefaultTrackSelector.html) in combination with [`DefaultHttpDataSourceFactory`](https://exoplayer.dev/doc/reference/com/google/android/exoplayer2/upstream/DefaultHttpDataSource.html) to show subtitles.
+On Android, we recommend using a library such as [`ExoPlayer`](https://github.com/google/ExoPlayer) to support live captions. ExoPlayer is developed by Google and is an open-source alternative to Android's [`MediaPlayer`](https://developer.android.com/reference/android/media/MediaPlayer) for audio and video playback. Many code examples can be found in the [ExoPlayer documentation](https://exoplayer.dev/). You can use [`DefaultTrackSelector`](https://exoplayer.dev/doc/reference/index.html?com/google/android/exoplayer2/trackselection/DefaultTrackSelector.html) in combination with [`DefaultHttpDataSourceFactory`](https://exoplayer.dev/doc/reference/com/google/android/exoplayer2/upstream/DefaultHttpDataSource.html) to show subtitles.
 
 ```kotlin
 val trackSelector = DefaultTrackSelector(baseContext)
@@ -28,7 +28,7 @@ exoPlayer.prepare(mediaSource)
 
 ## iOS
 
-On iOS, [`AVPlayer`](https://developer.apple.com/documentation/avfoundation/avplayer) has built-in support for [live video](https://developer.apple.com/documentation/avfoundation/media_playback_and_selection/using_avfoundation_to_play_and_persist_http_live_streams) with [captions](https://developer.apple.com/documentation/avfoundation/media_playback_and_selection/adding_subtitles_and_alternative_audio_tracks). Users can [automatically turn on captions](https://support.apple.com/guide/iphone/subtitles-and-captions-iph3e2e23d1/ios) via System Preferences. The easiest way to stream a live video is through [AVPlayerViewController](https://developer.apple.com/documentation/avkit/avplayerviewcontroller).
+On iOS, [`AVPlayer`](https://developer.apple.com/documentation/avfoundation/avplayer) has built-in support for [live video](https://developer.apple.com/documentation/avfoundation/media_playback_and_selection/using_avfoundation_to_play_and_persist_http_live_streams) with [captions](https://developer.apple.com/documentation/avfoundation/media_playback_and_selection/adding_subtitles_and_alternative_audio_tracks). Users can [automatically turn on captions](https://support.apple.com/guide/iphone/subtitles-and-captions-iph3e2e23d1/ios) via System Preferences. The easiest way to stream a live video is through [`AVPlayerViewController`](https://developer.apple.com/documentation/avkit/avplayerviewcontroller).
 
 ```swift
 guard let url = URL(string: "https://appt.org/live-video") else { 

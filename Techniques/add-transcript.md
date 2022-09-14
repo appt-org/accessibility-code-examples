@@ -53,7 +53,7 @@ SingleChildScrollView(
     softWrap: true,
     overflow: TextOverflow.visible,
   ),
-),
+)
 ```
 
 ## React Native

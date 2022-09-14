@@ -4,9 +4,9 @@ It is easier and quicker for users of assistive technologies to interact with gr
 
 ## Android
 
-On Android you can group elements by using the `android:focusable` and `android:screenReaderFocusable` attributes. Sometimes you also need the . `android:importantForAccessibility` attribute. Don't for get to set a `contentDescription` for the group.
+On Android you can group elements by using the [`android:focusable`](https://developer.android.com/reference/android/view/View#attr_android:focusable) and [`android:screenReaderFocusable`](https://developer.android.com/reference/android/view/View#attr_android:screenReaderFocusable) attributes. Sometimes you also need the [`android:importantForAccessibility`](https://developer.android.com/reference/android/view/View#attr_android:importantForAccessibility) attribute. Don't for get to set an [`android:contentDescription`](https://developer.android.com/reference/android/view/View#attr_android:contentDescription) for the group.
 
-Keep in mind that `android:focusable` is not only used by assistive technologies, but also by other means of interaction.
+Keep in mind that [`android:focusable`](https://developer.android.com/reference/android/view/View#attr_android:focusable) is not only used by assistive technologies, but also by other means of interaction.
 
 ```xml
 <LinearLayout
@@ -55,7 +55,7 @@ Semantics(
 
 In React Native, you can group elements together by using the [`accessible`](https://reactnative.dev/docs/accessibility#accessible) prop. An [`accessibilityLabel`](https://reactnative.dev/docs/accessibility#accessibilitylabel) should be set for grouped elements.
 
-Note: by default, all touchable elements are accessible.
+Note: all touchable elements are accessible by default.
 
 ```jsx
 <View accessible accessibilityLabel="Appt group">
@@ -68,6 +68,6 @@ Note: by default, all touchable elements are accessible.
 
 Xamarin Forms does not have built-in support to group accessibility elements.
 
-```xml
+```csharp
 Not available, contribute!
 ```
