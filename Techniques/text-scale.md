@@ -1,6 +1,6 @@
 # Scale text
 
-Text should scale to the preferred size of the user. Users can specify their font size preference in the system settings of Android and iOS. Apps should use this preference to scale text to an appropriate size. This is especially important for visually impaired users because they might not be able to read the text otherwise.
+Apps should scale text to the size specified by users in the system settings. This is especially important for visually impaired users because they might not be able to read the text otherwise.
 
 ## Android
 
@@ -80,7 +80,9 @@ When inheriting a project you may find previous developers have disabled font-sc
 The code example below shows how to have a scaling font size.
 
 ```jsx
-<Text style={{ fontSize: 16 }}>Appt</Text>
+<Text style={{ fontSize: 16 }}>
+    Appt
+</Text>
 ```
 
 ## Xamarin

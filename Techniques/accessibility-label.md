@@ -1,4 +1,4 @@
-# Set accessibility label
+# Accessibility label
 
 An accessibility label helps users of assistive technologies to identify elements on the screen. In the context of mobile apps, the word `accessibility label` is used differently compared to websites. The accessibility label is presented to assistive technologies as accessible name, but is also presented visually as accessible label.
 

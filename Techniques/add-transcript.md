@@ -1,6 +1,6 @@
 # Add transcript
 
-A transcript is a text version which describes information shown in media, such as a video or podcast.
+Videos should contain a transcript to allow users to read what is shown in media, such as a video or podcast.
 
 A basic transcript contains information needed to understand what is being said. This mostly benefits people who are deaf or hard of hearing, or have difficulty processing auditory information.
 

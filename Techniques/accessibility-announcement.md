@@ -1,10 +1,10 @@
 # Post accessibility announcement
 
-Users of assistive technologies should be made aware of important changes in content. This can be done by posting an accessibility announcement. What happens next depends on the active assistive technology. The screen reader for example, will read the message aloud.
+Users of assistive technologies should be made aware of important changes in content through accessibility announcements. What happens next depends on the active assistive technology. The screen reader for example, will read the message aloud.
 
 ## Android
 
-On Android, you can post an accessibility message by using the [`AccessibilityManager`](https://developer.android.com/reference/android/view/accessibility/AccessibilityManager) object. Create an [AccessibilityEvent](https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent), set the type to [AccessibilityEvent.TYPE_ANNOUNCEMENT](https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent#TYPE_ANNOUNCEMENT) and supply a message.
+On Android, you can post an accessibility message by using the [`AccessibilityManager`](https://developer.android.com/reference/android/view/accessibility/AccessibilityManager) object. Create an [`AccessibilityEvent`](https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent), set the type to [`AccessibilityEvent.TYPE_ANNOUNCEMENT`](https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent#TYPE_ANNOUNCEMENT) and supply a message.
 
 ```kotlin
 val type = AccessibilityEventCompat.TYPE_ANNOUNCEMENT

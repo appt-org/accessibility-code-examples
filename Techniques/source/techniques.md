@@ -70,7 +70,7 @@ fun label(view: View, label: CharSequence): View {
 
 ### 2. Set accessibility focus
 
-Moved to [set accessibility focus](../set-accessibility-focus.md)
+Moved to [set accessibility focus](../accessibility-focusable.md)
 
 ### 3. Set accessibility visibility
 
@@ -543,7 +543,7 @@ func label(_ view: UIView, label: String) -> UIView {
 
 ### 2. Set accessibility focus
 
-Moved to [set accessibility focus](../set-accessibility-focus.md)
+Moved to [set accessibility focus](../accessibility-focusable.md)
 
 ### 3. Set accessibility visibility
 

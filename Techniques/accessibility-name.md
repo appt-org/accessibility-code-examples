@@ -1,10 +1,10 @@
-# Set accessibility name
+# Accessibility name
 
 The accessibility name is the name of a user interface element. It is used by assistive technologies to inform users about ways to interact with your app.
 
 In mobile apps, an `accessibility name` is usually the same as the `accessibility label`.
 
-See [set accessibility label](set-accessibility-label.md) for more information about setting an accessibility label.
+See [set accessibility label](accessibility-label.md) for more information about setting an accessibility label.
 
 ## Android
 
