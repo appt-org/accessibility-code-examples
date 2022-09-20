@@ -1,6 +1,6 @@
 # Accessibility label
 
-An accessibility label helps users of assistive technologies to identify elements on the screen. In the context of mobile apps, the word `accessibility label` is used differently compared to websites. The accessibility label is presented to assistive technologies as accessible name, but is also presented visually as accessible label.
+An accessibility label helps users of assistive technologies to identify elements on the screen. The accessibility label is conveyed to assistive technologies. Accessibility labels are announced by the screen reader and presented visually by voice control.
 
 ## Android
 
@@ -54,8 +54,6 @@ You can also use the [`attributedLabel`](https://api.flutter.dev/flutter/semanti
 
 If you want to ignore the semantics of underlaying widgets, you can set the [`excludeSemantics`](https://api.flutter.dev/flutter/widgets/Semantics/excludeSemantics.html) attribute to `true`.
 
-You can also use the [`Tooltip`](https://api.flutter.dev/flutter/material/Tooltip-class.html) widget to provide text labels which help explain the function of an element. Many widgets, such as [`IconButton`](https://api.flutter.dev/flutter/material/IconButton-class.html), have a [`tooltip`](https://api.flutter.dev/flutter/material/IconButton/tooltip.html) property to include a Tooltip.
-
 ```dart
 Semantics(
   label: 'Appt',
@@ -63,15 +61,6 @@ Semantics(
     SpellOutStringAttribute(range: const TextRange(start: 0, end: 3))
   ]),
   excludeSemantics: true;
-);
-
-IconButton(
-  tooltip: 'Appt',
-);
-
-Tooltip(
-  message: 'Appt',
-  child: Widget();
 );
 ```
 
