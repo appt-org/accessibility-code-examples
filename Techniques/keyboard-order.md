@@ -22,26 +22,22 @@ On Android, you can use several `focus` properties to modify the keyboard focus 
     android:focusable="true"
     android:nextFocusForward="@+id/field2"
     android:nextFocusDown="@+id/field3"
-    android:nextFocusRight="@+id/field2"
-</EditText>
+    android:nextFocusRight="@+id/field2"/>
 
 <EditText
     android:id="@+id/field2"
     android:focusable="true"
     android:nextFocusForward="@+id/field3"
-    android:nextFocusDown="@+id/field4"
-</EditText>
+    android:nextFocusDown="@+id/field4"/>
 
 <EditText
     android:id="@+id/field3"
     android:focusable="true"
-    android:nextFocusForward="@+id/field4"
-</EditText>
+    android:nextFocusForward="@+id/field4"/>
 
 <EditText
     android:id="@+id/field4"
-    android:focusable="true"
-</EditText>
+    android:focusable="true"/>
 ```
 
 ## iOS

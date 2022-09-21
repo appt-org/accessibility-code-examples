@@ -11,7 +11,8 @@ view.importantForAccessibility = View.IMPORTANT_FOR_ACCESSIBILITY_NO
 ```
 
 ```xml
-android:importantForAccessibility="no"
+<View
+  android:importantForAccessibility="no" />
 ```
 
 ## iOS
@@ -46,5 +47,6 @@ In React Native, the [`accessible`](https://reactnative.dev/docs/accessibility#a
 In Xamarin, the [`IsInAccessibleTree`](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/accessibility/automation-properties#automationpropertiesisinaccessibletree) property indicates whether assistive technologies can focus on an element.
 
 ```xml
-<Image AutomationProperties.IsInAccessibleTree="False" />
+<Image 
+  AutomationProperties.IsInAccessibleTree="False" />
 ```

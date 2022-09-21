@@ -12,10 +12,12 @@ Keep in mind that [`android:focusable`](https://developer.android.com/reference/
 <LinearLayout
     android:focusable="true"
     android:screenReaderFocusable="true"
-    android:contentDescription="Appt group"  >
+    android:contentDescription="Appt group">
+
     <TextView
         android:focusable="false"
         android:importantForAccessibility="no"/>
+
     <ImageView
         android:focusable="false"
         android:importantForAccessibility="no"/>
