@@ -1,45 +1,58 @@
 # Accessibility hint
 
-Text
+An accessibility hint helps users to understand what will happen after performing an action. Accessibility hints are announced by the screen reader. Keep in mind that users can turn off accessibility hints. You should therefore not rely on accessibility hints as the sole indicator of what happens. You should also avoid information duplication, e.g. avoid telling users that they can 'double tap to activate'.
 
 ## Android
 
-Text
+On Android, you can use [`setHint`](https://developer.android.com/reference/android/widget/TextView#setHint(int)) to set a hint. Keep in mind that this `hint` is not only used for accessibility, but also shown visually in editable views.
 
 ```kotlin
-Not available, contribute!
+view.hint = "Opens the Appt website"
+```
+
+```xml
+<Button
+    android:hint="Opens the Appt website">
+</Button>
 ```
 
 ## iOS
 
-Text
+On iOS, you can use the [`accessibilityHint`](https://developer.apple.com/documentation/objectivec/nsobject/1615093-accessibilityhint) property to provide an accessibility hint.
 
 ```swift
-Not available, contribute!
+button.accessibilityHint = "Opens the Appt website"
 ```
 
 ## Flutter
 
-Text
+With Flutter, you can set an accessibility hint by using the [`hint`](https://api.flutter.dev/flutter/semantics/SemanticsProperties/hubt.html) property provided by the [`Semantics`](https://api.flutter.dev/flutter/widgets/Semantics-class.html) widget.
 
 ```dart
-Not available, contribute!
+Semantics(
+  hint: 'Opens the Appt website'
+);
 ```
 
 ## React Native
 
-In React Native, the [`accessibilityHint`](https://reactnative.dev/docs/accessibility#accessibilityhint) prop can be used to provide an accessibility hint. This hint can help users to understand what will happen after performing an action on the element.
+In React Native you can set an accessibility hint by using the [`accessibilityHint`](https://reactnative.dev/docs/accessibility#accessibilityhint) prop.
 
 ```jsx
 <Pressable
-  accessibilityHint="Close modal"
+  accessibilityHint="Opens the Appt website"
 />
 ```
 
 ## Xamarin
 
-Text
+In Xamarin Forms you can set an accessibility hint by using the [`AutomationProperties.HelpText`](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/accessibility/automation-properties#automationpropertieshelptext) property.
 
 ```xml
-Not available, contribute!
+<Button
+  AutomationProperties.HelpText="Opens the Appt website" />
+```
+
+```csharp
+AutomationProperties.SetHelpText(button, "Opens the Appt website");
 ```
