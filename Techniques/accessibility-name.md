@@ -16,7 +16,7 @@ element.contentDescription = "Appt"
 
 ## iOS
 
-iOS uses the [accessibilityLabel](https://developer.apple.com/documentation/uikit/uiaccessibilityelement/1619577-accessibilitylabel) property as accessibility name.
+iOS uses the [`accessibilityLabel`](https://developer.apple.com/documentation/uikit/uiaccessibilityelement/1619577-accessibilitylabel) property as accessibility name.
 
 ```swift
 element.accessibilityLabel = "Appt"
