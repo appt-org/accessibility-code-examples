@@ -1,30 +1,30 @@
 # Input error
 
-Users should be notified when they make input errors. Show a clear error message when data has been entered incorrectly. It is important that error messages are also posted to users of assistive technologies.
+Users should be notified when they make input errors. Show a clear error message when data has been entered incorrectly. Furthermore, provide suggestions that help users to fix the error. It is important that error messages are also posted to users of assistive technologies.
 
 ## Android
 
-On Android, we recommend using a [`TextView`](https://developer.android.com/reference/android/widget/TextView) to show an error message. The error message should also be posted to assistive technologies by using an [`accessibility announcement`](../Techniques/accessibility-announcement.md).
+On Android, you can use a [`TextView`](https://developer.android.com/reference/android/widget/TextView) to show an error message. The error message should also be posted to assistive technologies by using an [`accessibility announcement`](../Techniques/accessibility-announcement.md).
 
 You can also use [`TextInputLayout`](https://developer.android.com/reference/com/google/android/material/textfield/TextInputLayout), which makes showing error messages easier. Set [`setErrorEnabled`](https://developer.android.com/reference/com/google/android/material/textfield/TextInputLayout#setErrorEnabled(boolean)) to `true` and then set the error message by using the [`setError`](https://developer.android.com/reference/com/google/android/material/textfield/TextInputLayout#seterror) method.
 
 ```kotlin
 textView.setVisibility(View.VISIBLE)
-textView.text = "You are required to fill in your name"
+textView.text = "Invalid date, must be in the form DD/MM/YYYY, for example, 01/01/2000"
 
 input.setErrorEnabled(true)
-input.setError("You are required to fill in your name")
+input.setError("Invalid date, must be in the form DD/MM/YYYY, for example, 01/01/2000")
 ```
 
 ## iOS
 
 On iOS, we recommend using an [`UILabel`](https://developer.apple.com/documentation/uikit/uilabel) to indicate an error. The error message should also be posted to assistive technologies by using an [`accessibility announcement`](../Techniques/accessibility-announcement.md).
 
-There are also third party libraries available for displaying error messages. Unfortunately, accessibility is often not considered in the implementations.
+You could also use a third party library to displaying instructions. Unfortunately, accessibility is often not considered in the implementations.
 
 ```swift
 errorLabel.isHidden = false
-errorLabel.text = "You are required to fill in your name"
+errorLabel.text = "Invalid date, must be in the form DD/MM/YYYY, for example, 01/01/2000"
 ```
 
 ## Flutter
@@ -32,43 +32,29 @@ errorLabel.text = "You are required to fill in your name"
 With Flutter, you can set an [`InputDecoration`](https://api.flutter.dev/flutter/material/InputDecoration-class.html) on a [`TextField`](https://api.flutter.dev/flutter/material/TextField-class.html) to indicate an error. Set the `errorText` property to the error message that should be displayed. To remove the error, set the `errorText` to `null`. The error message should also be posted to assistive technologies by using an [`accessibility announcement`](../Techniques/accessibility-announcement.md).
 
 ```dart
-String? errorText;
+bool _hasError = false;
 
-void nameIsNotEmpty(String? email) {
-  setState(() {
-    if (name == null || name.isEmpty) {
-      errorText = 'You are required to fill in your name';
-    }
-    errorText = null;
-  });
-}
-
-@override
-Widget build(BuildContext context) {
-  return TextField(
-    onChanged: nameIsNotEmpty,
-    decoration: InputDecoration(
-        labelText: 'Enter your name',
-        hintText: 'This is a required field',
-        errorText: errorText
-    ),
-  );
-}
+TextField(
+  decoration: InputDecoration(
+    labelText: 'Date of birth',
+    helperText: _hasError ? 'Invalid date, must be in the form DD/MM/YYYY, for example, 01/01/2000' : null,
+  ),
+);
 ```
 
 ## React Native
 
 In React Native we recommend using a [`Text`](https://reactnative.dev/docs/text) component to display an error. The error message should also be posted to assistive technologies by using an [`accessibility announcement`](../Techniques/accessibility-announcement.md).
 
-You can also use a third party library such as [`HelperText`](https://callstack.github.io/react-native-paper/helper-text.html), which makes it easier to display error states.
+You can also use a package for displaying errors, such as [React Native Paper](https://callstack.github.io/react-native-paper/index.html). This package includes a [`HelperText`](https://callstack.github.io/react-native-paper/text-input.html) component which can be used for displaying errors. The type should be set to `error` for errors.
 
 ```jsx
-<Text>You are required to fill in your name</Text>
+<Text>Invalid date, must be in the form DD/MM/YYYY, for example, 01/01/2000</Text>
 
 <View>
-  <TextInput label="Email" value={text} onChangeText={onChangeText} />
+  <TextInput label="Date of birth" value={text} onChangeText={onChangeText} />
   <HelperText type="error" visible={hasErrors()}>
-    E-mail address is invalid!
+    Invalid date, must be in the form DD/MM/YYYY, for example, 01/01/2000
   </HelperText>
 </View>
 ```
@@ -79,6 +65,6 @@ In Xamarin.Forms, we recommend using a [`Label`](https://learn.microsoft.com/en-
 
 ```xml
 <Label
-    Text="{Binding ErrorText}"
+    Text="Invalid date, must be in the form DD/MM/YYYY, for example, 01/01/2000"
     IsVisible="{Binding IsValid}" />
 ```
