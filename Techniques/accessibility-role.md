@@ -77,11 +77,12 @@ In React Native you can use the [`accessibilityRole`](https://reactnative.dev/do
 
 Xamarin Forms does not have built-in support for setting an accessibility role.
 
-The [`SemanticEffect`](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/Effects/Semantic/SemanticEffect.shared.cs) file inside the [`Xamarin.CommunityToolkit`](https://github.com/xamarin/XamarinCommunityToolkit) contains various methods to set accessibility roles.
+By using [`Effects`](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/effects/introduction) it is possible to implement platform specific behaviour.
 
-By using [`Effects`](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/effects/introduction) it is possible to implement platform specific behaviour. The [`A11YEffect`](https://github.com/appt-org/accessibility-code-examples/blob/main/Xamarin/en/A11yEffect.md), [`A11YEffect for Android`](https://github.com/appt-org/accessibility-code-examples/blob/main/Xamarin/en/A11yEffect_Android.md) and [`A11YEffect for iOS`](https://github.com/appt-org/accessibility-code-examples/blob/main/Xamarin/en/A11yEffect_iOS.md) files show how to implement an `effect` for accessibility role.
+The [`SemanticEffect`](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/Effects/Semantic/SemanticEffect.shared.cs) file inside the [`Xamarin.CommunityToolkit`](https://github.com/xamarin/XamarinCommunityToolkit) defines various methods to set accessibility roles.
 
 ```xml
 <controls:CustomFontLabel
-    effects:A11YEffect.ControlType="{OnPlatform iOS=Button, Android=Button}" />
+    xct:SemanticEffect.HeadingLevel="1"
+    xct:SemanticEffect.Description="Button" />
 ```
