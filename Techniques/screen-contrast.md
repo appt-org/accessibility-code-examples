@@ -12,7 +12,7 @@ On Android, you can use the [Accessibility Scanner app](https://developer.androi
 
 ## iOS
 
-On iOS, can use [XCode's Accessibility Inspector](https://developer.apple.com/library/archive/documentation/Accessibility/Conceptual/AccessibilityMacOSX/OSXAXTestingApps.html) to detect contrast issues automatically.
+On iOS, can use [Xcode's Accessibility Inspector](https://developer.apple.com/library/archive/documentation/Accessibility/Conceptual/AccessibilityMacOSX/OSXAXTestingApps.html) to detect contrast issues automatically.
 
 ```swift
 // No code required
@@ -20,7 +20,7 @@ On iOS, can use [XCode's Accessibility Inspector](https://developer.apple.com/li
 
 ## Flutter
 
-With Flutter, you can use the [Accessibility Scanner app](https://developer.android.com/guide/topics/ui/accessibility/testing#accessibility-scanner) and [XCode's Accessibility Inspector](https://developer.apple.com/library/archive/documentation/Accessibility/Conceptual/AccessibilityMacOSX/OSXAXTestingApps.html) to detect contrast issues automatically.
+With Flutter, you can use the [Accessibility Scanner app](https://developer.android.com/guide/topics/ui/accessibility/testing#accessibility-scanner) and [Xcode's Accessibility Inspector](https://developer.apple.com/library/archive/documentation/Accessibility/Conceptual/AccessibilityMacOSX/OSXAXTestingApps.html) to detect contrast issues automatically.
 
 ```dart
 // No code required
@@ -28,7 +28,7 @@ With Flutter, you can use the [Accessibility Scanner app](https://developer.andr
 
 ## React Native
 
-With React Native, you can use the [Accessibility Scanner app](https://developer.android.com/guide/topics/ui/accessibility/testing#accessibility-scanner) and [XCode's Accessibility Inspector](https://developer.apple.com/library/archive/documentation/Accessibility/Conceptual/AccessibilityMacOSX/OSXAXTestingApps.html) to detect contrast issues automatically.
+With React Native, you can use the [Accessibility Scanner app](https://developer.android.com/guide/topics/ui/accessibility/testing#accessibility-scanner) and [Xcode's Accessibility Inspector](https://developer.apple.com/library/archive/documentation/Accessibility/Conceptual/AccessibilityMacOSX/OSXAXTestingApps.html) to detect contrast issues automatically.
 
 ```jsx
 // No code required
@@ -36,7 +36,7 @@ With React Native, you can use the [Accessibility Scanner app](https://developer
 
 ## Xamarin
 
-With Xamarin, you can use the [Accessibility Scanner app](https://developer.android.com/guide/topics/ui/accessibility/testing#accessibility-scanner) and [XCode's Accessibility Inspector](https://developer.apple.com/library/archive/documentation/Accessibility/Conceptual/AccessibilityMacOSX/OSXAXTestingApps.html) to detect contrast issues automatically.
+With Xamarin, you can use the [Accessibility Scanner app](https://developer.android.com/guide/topics/ui/accessibility/testing#accessibility-scanner) and [Xcode's Accessibility Inspector](https://developer.apple.com/library/archive/documentation/Accessibility/Conceptual/AccessibilityMacOSX/OSXAXTestingApps.html) to detect contrast issues automatically.
 
 ```csharp
 // No code required
