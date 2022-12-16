@@ -1,4 +1,4 @@
-# Example
+# Template
 
 Text
 
@@ -38,6 +38,6 @@ Not available, contribute!
 
 Text
 
-```xml
+```csharp
 Not available, contribute!
 ```
