@@ -2,6 +2,10 @@
 
 Assistive technologies try to determine a logical accessibility order based on the placement and properties of the elements on the screen. In Left-to-Right languages, the order goes from top to bottom, from left to right. If this order is not optimal, you can override the accessibility order that assistive technologies follow.
 
+## WCAG
+
+Relates to 1.3.2, 2.1.1, 2.4.3
+
 ## Android
 
 On Android, you can set the accessibility order in XML, or modify the accessibility order in code. You can use the [`android:accessibilityTraversalAfter`](https://developer.android.com/reference/android/view/View#attr_android:accessibilityTraversalAfter) and [`android:accessibilityTraversalBefore`](accessibilityTraversalBefore) properties in XML. Or you can use the [`setAccessibilityTraversalBefore`](https://developer.android.com/reference/android/view/View#setAccessibilityTraversalBefore(int)) and [`setAccessibilityTraversalAfter`](https://developer.android.com/reference/android/view/View#setAccessibilityTraversalAfter(int)) methods in code.

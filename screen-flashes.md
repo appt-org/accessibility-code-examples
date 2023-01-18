@@ -2,6 +2,10 @@
 
 Rapidly flashing images or views (more than three flashes per second) can cause seizures for some users. You need to make sure this is not the case when designing and developing an app.
 
+## WCAG
+
+Relates to 2.3.1
+
 ## Android
 
 On Android, flashing content often uses [`Executors`](https://developer.android.com/reference/java/util/concurrent/Executors), [`Handler`](https://developer.android.com/reference/android/os/Handler), or [`Timer`](https://developer.android.com/reference/java/util/Timer). Check if these objects are used to show more than three flashes per second.

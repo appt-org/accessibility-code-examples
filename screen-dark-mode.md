@@ -2,6 +2,10 @@
 
 Dark mode darkens background colours and provides a more comfortable viewing experience in low light. This is essential for many visually impaired people since a light background colour can be painful or even impossible to look at for an extended period of time. But also people who have problems with their concentration, for example due to a brain disorder, benefit greatly from dark mode.
 
+## WCAG
+
+Relates to 1.4.3, 1.4.11
+
 ## Android
 
 On Android, you can detect dark mode by checking if the [`uiMode`](https://developer.android.com/reference/android/content/res/Configuration#uiMode) configuration contains [`UI_MODE_NIGHT_MASK`](https://developer.android.com/reference/android/content/res/Configuration#UI_MODE_NIGHT_MASK).

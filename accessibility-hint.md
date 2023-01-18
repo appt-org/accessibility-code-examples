@@ -2,6 +2,10 @@
 
 An accessibility hint helps users to understand what will happen after performing an action. Accessibility hints are announced by the screen reader. Keep in mind that users can turn off accessibility hints. You should therefore not rely on accessibility hints as the sole indicator of what happens. You should also avoid information duplication, e.g. avoid telling users that they can 'double tap to activate'.
 
+## WCAG
+
+Relates to 1.3.3
+
 ## Android
 
 On Android, you can use [`setHint`](https://developer.android.com/reference/android/widget/TextView#setHint(int)) to set a hint. Keep in mind that this `hint` is not only used for accessibility, but also shown visually in editable views.

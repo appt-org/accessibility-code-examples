@@ -2,6 +2,10 @@
 
 An accessibility value helps users of assistive technologies to understand the state of elements on the screen. A slider should indicate the currently selected value, and ideally also it's minimum and maximum value. The screen reader announces the value of elements as it reads the screen. It is important to assign correct values to elements to avoid misunderstanding.
 
+## WCAG
+
+Relates to 4.1.2
+
 ## Android
 
 Android has limited support to provide a dedicated accessibility value for assistive technologies. The [`AccessibilityNodeInfoCompat`](https://developer.android.com/reference/androidx/core/view/accessibility/AccessibilityNodeInfoCompat) object contains a couple of methods, such as the [`setChecked`](https://developer.android.com/reference/kotlin/androidx/core/view/accessibility/AccessibilityNodeInfoCompat#setchecked) method.

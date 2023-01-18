@@ -2,6 +2,10 @@
 
 Users might have difficulty finding a specific screen. For example, inside a banking app, there might be a setting for enabling contactless payments. Users likely need to navigate through multiple screens to reach before reaching this setting. It helps to offer search functionality to jump directly to this screen.
 
+## WCAG
+
+Relates to 2.4.5
+
 ## Android
 
 On Android, you could use a [`SearchView`](https://developer.android.com/reference/androidx/appcompat/widget/SearchView) to search for screens.

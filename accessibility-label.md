@@ -2,6 +2,10 @@
 
 An accessibility label helps users of assistive technologies to identify elements on the screen. The accessibility label is conveyed to assistive technologies. Accessibility labels are announced by the screen reader and presented visually by voice control.
 
+## WCAG
+
+Relates to 1.1.1
+
 ## Android
 
 On Android, you can use the [`contentDescription`](https://developer.android.com/reference/android/view/View.html#attr_android:contentDescription) attribute to set an accessibility label.

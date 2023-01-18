@@ -2,6 +2,10 @@
 
 Whenever an element receives focus, it should not automatically trigger an event which changes `context`. Example of changing context include, but are not limited to: automatically submitting data, opening a new screen or moving to another element. Focus should only be moved deliberately by the user.
 
+## WCAG
+
+Relates to 3.2.1
+
 ## Android
 
 On Android, you can use an [`OnFocusChangeListener`](https://developer.android.com/reference/android/view/View.OnFocusChangeListener) to listen to focus changes. The [`onFocusChange`](https://developer.android.com/reference/android/view/View.OnFocusChangeListener#onFocusChange(android.view.View,%20boolean)) method is called when the element receives focus.

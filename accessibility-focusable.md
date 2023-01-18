@@ -2,6 +2,10 @@
 
 An element should indicate whether it should be focusable by assistive technologies or not. You can help users of assistive technologies by choosing which elements they can interact with. By keep unnecessary elements out of the accessibility tree, the user experience is improved.
 
+## WCAG
+
+Relates to 1.1.1
+
 ## Android
 
 On Android, you can use the [`setImportantForAccessibility`](https://developer.android.com/reference/android/view/View#setImportantForAccessibility(int)) method to set whether assistive technologies can focus on an element. You can also set this property directly in XML by using the [`android:importantForAccessibility`](https://developer.android.com/reference/android/view/View#attr_android:importantForAccessibility) property.

@@ -2,6 +2,10 @@
 
 When content is written in multiple languages, foreign words should ideally be indicated in their respective language. For example, you can indicate a French quote in a Dutch piece of content. This enables assistive technologies to use the right pronunciation.
 
+## WCAG
+
+Relates to 3.1.1
+
 ## Android
 
 On Android, you can use [`LocaleSpan`](https://developer.android.com/reference/android/text/style/LocaleSpan) to speak content in a specific language. Multiple `LocaleSpan`'s can be embedded inside a [`SpannableString`](https://developer.android.com/reference/android/text/SpannableString) to speak content in multiple languages.

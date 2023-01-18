@@ -4,6 +4,10 @@ All interactive elements must have an accessibility name. The accessibility name
 
 For apps, the `accessibility name` is usually equal to the `accessibility label`. See [accessibility label](accessibility-label.md) for more ways of setting an accessibility label.
 
+## WCAG
+
+Relates to 2.5.3, 4.1.2
+
 ## Android
 
 On Android, the [`contentDescription`](https://developer.android.com/reference/android/view/View.html#attr_android:contentDescription) property is used as accessibility name.

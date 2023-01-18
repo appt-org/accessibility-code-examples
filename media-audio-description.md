@@ -2,6 +2,10 @@
 
 Videos should include audio description when important visual details are shown which you cannot hear. Audio description is an additional sound track which describes these important visual details. This allows people who are blind or have difficulty processing visual information to understand the content.
 
+## WCAG
+
+Relates to 1.2.3, 1.2.5
+
 ## Android
 
 As of Android 4.1, the [`MediaPlayer`](https://developer.android.com/reference/android/media/MediaPlayer) has support for multiple audio tracks. Use the [`selectTrack`](https://developer.android.com/reference/android/media/MediaPlayer#selectTrack(int)) method to select the correct audio track.

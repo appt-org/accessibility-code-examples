@@ -2,6 +2,10 @@
 
 Screens should have descriptive headers, this helps users find specific content and orient themselves within your app. It is recommended to put distinguishing information at the beginning of your headers.
 
+## WCAG
+
+Relates to 2.4.6
+
 ## Android
 
 On Android, headers created with [`TextView`](https://developer.android.com/reference/android/widget/TextView) can be changed with the [`setText`](https://developer.android.com/reference/android/widget/TextView#setText(java.lang.CharSequence)) method.

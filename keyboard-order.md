@@ -2,6 +2,10 @@
 
 By adjusting the keyboard order, you can provide a great experience for users that control their device using a hardware keyboard.
 
+## WCAG
+
+Relates to 2.1.1, 2.4.3
+
 ## Android
 
 On Android, you can use several `focus` properties to modify the keyboard focus order.

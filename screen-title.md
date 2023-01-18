@@ -2,6 +2,10 @@
 
 Each screen should have a descriptive title, which helps users with identifying the screen.
 
+## WCAG
+
+Relates to 2.4.2
+
 ## Android
 
 On Android, we recommend using a [`Toolbar`](https://developer.android.com/reference/androidx/appcompat/widget/Toolbar) with an appropriate [`title`](https://developer.android.com/reference/android/app/Activity.html#setTitle(java.lang.CharSequence)) on each screen.

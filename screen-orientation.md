@@ -2,6 +2,10 @@
 
 Apps should adapt to the preferred display orientation of the user. Most apps restrict the screen to portrait orientation, but they should also support landscape orientation. Some users have their devices mounted in a fixed orientation (e.g. on the arm of a wheelchair). Therefore, apps need to support both orientations.
 
+## WCAG
+
+Relates to 1.3.4
+
 ## Android
 
 On Android, make sure that the [`android:screenOrientation`](https://developer.android.com/guide/topics/manifest/activity-element#screen) attribute is not used anywhere.

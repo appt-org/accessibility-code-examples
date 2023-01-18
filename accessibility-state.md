@@ -2,6 +2,10 @@
 
 An accessibility state helps users of assistive technologies to understand the state of elements on the screen. The state `selected` for example, indicates that an element has been selected. The screen reader announces the state of elements as it reads the screen. It is important to assign correct states of elements to avoid misunderstanding.
 
+## WCAG
+
+Relates to 4.1.2
+
 ## Android
 
 On Android, you can use the [`setAccessibilityDelegate`](https://developer.android.com/reference/androidx/core/view/ViewCompat#setAccessibilityDelegate(android.view.View,androidx.core.view.AccessibilityDelegateCompat)) method of [`ViewCompat`](https://developer.android.com/reference/androidx/core/view/ViewCompat) to get a reference to [`AccessibilityNodeInfoCompat`](https://developer.android.com/reference/androidx/core/view/accessibility/AccessibilityNodeInfoCompat). This object contains many useful accessibility related methods.

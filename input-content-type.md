@@ -2,6 +2,10 @@
 
 Setting the content type for input fields helps user entering data. For example, an e-mail address and password can be autofilled by a password manager. When the content type has not been set, this might not be possible to do automatically.
 
+## WCAG
+
+Relates to 1.3.5
+
 ## Android
 
 On Android, you can set a content type by using the [`android:optimizeForAutoFill`](https://developer.android.com/reference/android/R.styleable#View_autofillHints) property.

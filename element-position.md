@@ -2,6 +2,10 @@
 
 Components that are repeated on multiple screens should have a consistent position. This helps users to become comfortable, and they will able to predict where they can find things on each screen. This helps users with cognitive limitations, users with low vision, users with intellectual disabilities, and also those who are blind.
 
+## WCAG
+
+Relates to 3.2.3
+
 ## Android
 
 On Android, you should place your [`Toolbar`](https://developer.android.com/reference/android/widget/Toolbar) and [BottomNavigationView](https://developer.android.com/reference/com/google/android/material/bottomnavigation/BottomNavigationView) on the same position of each screen.

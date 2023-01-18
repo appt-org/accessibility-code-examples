@@ -2,6 +2,10 @@
 
 Whenever a user provides input, there should be no change of `context`. Example of changing context include, but are not limited to: automatically submitting data, opening a new screen or moving to another element. Input should have predictable effects.
 
+## WCAG
+
+Relates to 3.2.2
+
 ## Android
 
 On Android, be careful when using [`TextWatcher`](https://developer.android.com/reference/android/text/TextWatcher) methods. Do not trigger a change of context when text changes.

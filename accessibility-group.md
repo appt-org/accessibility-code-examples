@@ -2,6 +2,10 @@
 
 It is easier and quicker for users of assistive technologies to interact with grouped elements. Grouping elements into a single control makes things clearer, simplifies interactions, and provides larger touch targets.
 
+## WCAG
+
+Relates to 1.3.1
+
 ## Android
 
 On Android you can group elements by using the [`android:focusable`](https://developer.android.com/reference/android/view/View#attr_android:focusable) and [`android:screenReaderFocusable`](https://developer.android.com/reference/android/view/View#attr_android:screenReaderFocusable) attributes. Sometimes you also need the [`android:importantForAccessibility`](https://developer.android.com/reference/android/view/View#attr_android:importantForAccessibility) attribute. Don't for get to set an [`android:contentDescription`](https://developer.android.com/reference/android/view/View#attr_android:contentDescription) for the group.

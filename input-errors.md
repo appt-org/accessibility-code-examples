@@ -2,6 +2,10 @@
 
 Users should be notified when they make input errors. Show a clear error message when data has been entered incorrectly. Furthermore, provide suggestions that help users to fix the error. It is important that error messages are also posted to users of assistive technologies.
 
+## WCAG
+
+Relates to 3.3.1, 3.3.3
+
 ## Android
 
 On Android, you can use a [`TextView`](https://developer.android.com/reference/android/widget/TextView) to show an error message. The error message should also be posted to assistive technologies by using an [`accessibility announcement`](../Techniques/accessibility-announcement.md).

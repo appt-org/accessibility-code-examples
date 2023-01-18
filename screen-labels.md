@@ -2,6 +2,10 @@
 
 Screens should have descriptive labels, these help users recognize which purpose controls have.  It is recommended to put distinguishing information at the beginning of your labels.
 
+## WCAG
+
+Relates to 2.4.6
+
 ## Android
 
 On Android, labels created with [`TextView`](https://developer.android.com/reference/android/widget/TextView) can be changed with the [`setText`](https://developer.android.com/reference/android/widget/TextView#setText(java.lang.CharSequence)) method.

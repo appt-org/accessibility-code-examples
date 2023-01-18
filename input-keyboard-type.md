@@ -2,6 +2,10 @@
 
 Setting the keyboard type for input fields helps user entering data. For example, if users need to enter a number, it helps to show a numeric keyboard. If users need to enter an e-mail address, it helps if the at-key (`@`) is shown. You should always set an appropriate keyboard type.
 
+## WCAG
+
+Relates to 1.3.5
+
 ## Android
 
 On Android, you can set a keyboard type by using the [`android:inputType`](https://developer.android.com/reference/android/widget/TextView.html#attr_android:inputType) property. You can combine values with each other.

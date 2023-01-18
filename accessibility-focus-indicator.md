@@ -2,6 +2,10 @@
 
 Users should know which element has focus when using a keyboard or assistive technology. For example, you could show a rectangle around the focused element. Or you can adjust the colors whenever an element receives focus. Focus indicators can take many different forms. The focus indicator should remain visible while the element is in focused state.
 
+## WCAG
+
+Relates to 2.4.7
+
 ## Android
 
 On Android, you can adjust colors when an element receives focus. However, it's not possible to change the focus indicator of assistive technologies. Users can adjust their preferences in the system settings of Android.

@@ -2,6 +2,10 @@
 
 Assistive technologies, such as the screen reader, use the locale for the pronunciation of utterances. It is important to explictly set a locale for your app. An incorrect locale leads to unclear pronunciation. Also, setting a locale can help with displaying characters correctly.
 
+## WCAG
+
+Relates to 3.1.2
+
 ## Android
 
 On Android, you can use the [`createConfigurationContext`](https://developer.android.com/reference/android/content/Context#createConfigurationContext(android.content.res.Configuration)) method to load resources in the correct locale. This is especially important for users of screen readers.

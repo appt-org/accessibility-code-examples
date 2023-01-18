@@ -2,6 +2,10 @@
 
 An accessibility role helps users of assistive technologies to understand the purpose of elements on the screen. The role `button` for example, indicates that an action will be performed on activation. The screen reader announces the role of elements as it reads the screen. It is important to assign correct roles to elements to avoid misunderstanding.
 
+## WCAG
+
+Relates to 1.3.1, 4.1.2
+
 ## Android
 
 On Android, you can use the [`setAccessibilityDelegate`](https://developer.android.com/reference/androidx/core/view/ViewCompat#setAccessibilityDelegate(android.view.View,androidx.core.view.AccessibilityDelegateCompat)) method of [`ViewCompat`](https://developer.android.com/reference/androidx/core/view/ViewCompat) to get a reference to [`AccessibilityNodeInfoCompat`](https://developer.android.com/reference/androidx/core/view/accessibility/AccessibilityNodeInfoCompat). This object contains many useful accessibility related methods.

@@ -6,6 +6,10 @@ A basic transcript contains information needed to understand what is being said.
 
 A descriptive transcript also contains visual information to understand what is being shown. This mostly benefits people who are blind or visually impaired.
 
+## WCAG
+
+Relates to 1.2.1, 1.2.3
+
 ## Android
 
 On Android, you can use a [`TextView`](https://developer.android.com/reference/android/widget/TextView) to display written text. Don't forget to put it in a [ScrollView](https://developer.android.com/reference/android/widget/ScrollView), to make the text scrollable.

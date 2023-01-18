@@ -2,6 +2,10 @@
 
 It can be helpful for users to skip repeated blocks of content. Most apps have content which appears on multiple screens. It takes longer for users of using assistive technologies to get navigate past repeated content. Adding the ability to skip past repeated content helps these users to navigate quicker.
 
+## WCAG
+
+Relates to 2.4.1
+
 ## Android
 
 On Android, skipping content is mostly relevant to [`TalkBack`](https://appt.org/en/docs/android/features/talkback) users. TalkBack includes a `local context menu` which allows users to jump to the following content types:

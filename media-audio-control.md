@@ -2,6 +2,10 @@
 
 Users should be able to control audio whenever it plays automatically. This includes being able to reduce the volume to zero. It's difficult to hear speech output of the screen reader users when other audio is playing at the same time.
 
+## WCAG
+
+Relates to 1.4.2
+
 ## Android
 
 In Android apps, you should always be able to control audio. When using [`MediaPlayer`](https://developer.android.com/reference/android/media/MediaPlayer), you should implement buttons to call the [`start`](https://developer.android.com/reference/android/media/MediaPlayer#start()), [`pause`](https://developer.android.com/reference/android/media/MediaPlayer#pause()) and [`stop`](https://developer.android.com/reference/android/media/MediaPlayer#stop()) methods.

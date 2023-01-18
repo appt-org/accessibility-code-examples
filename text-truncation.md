@@ -2,6 +2,10 @@
 
 Text should never get truncated in your app, even when users have enlarged their font size. Instead, apps should adapt the interface to the available space.
 
+## WCAG
+
+Relates to 1.4.4
+
 ## Android
 
 On Android, you can avoid text truncation by removing all instances of [`android:maxLines`](https://developer.android.com/reference/android/widget/TextView#attr_android:maxLines) from your app. You should also avoid using fixed values for any heights or widths and instead use [`wrap_content`](https://developer.android.com/reference/android/view/ViewGroup.LayoutParams#WRAP_CONTENT) where possible.

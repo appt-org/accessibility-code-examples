@@ -2,6 +2,10 @@
 
 Input fields should have labels so that users know what input data is expected. These labels should stay visible while users are entering data. A placeholder which disappears while entering data does not count as a label.
 
+## WCAG
+
+Relates to 3.3.2
+
 ## Android
 
 On Android, you can link labels to controls by using the [`labelFor`](https://developer.android.com/reference/android/view/View#setLabelFor(int)) attribute. We recommend using a [`TextView`](https://developer.android.com/reference/android/widget/TextView) to show labels for input fields.

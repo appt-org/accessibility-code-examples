@@ -2,6 +2,10 @@
 
 Sometimes you need to programmatically move the accessibility focus to a specific element. For example, when you present a modal, the assistive technology should move it's focus to it. Or when moving to a new screen, you might want assistive technologies to focus a specific element.
 
+## WCAG
+
+Relates to 2.1.1, 2.4.3
+
 ## Android
 
 On Android, you can send an [`AccessibilityEvent`](https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent) of the type [`TYPE_VIEW_FOCUSED`](https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent#TYPE_VIEW_FOCUSED) to move the focus of assistive technologies to a specific view. The view must be focusable for this event to take effect.

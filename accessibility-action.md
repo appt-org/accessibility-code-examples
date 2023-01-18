@@ -2,6 +2,10 @@
 
 Accessibility actions provide alternative ways for for users of assistive technologies to perform actions. For users of [switch control](https://beta.appt.org/en/docs/ios/features/switch-control) it can be difficult to use drag-and-drop functionality. This functionality can be made more accessible by providing accessibility actions to move items up and down.
 
+## WCAG
+
+Relates to 1.3.3
+
 ## Android
 
 On Android, you can add actions for assistive technologies using the [`addAction`](https://developer.android.com/reference/kotlin/androidx/core/view/accessibility/AccessibilityNodeInfoCompat#addAction(androidx.core.view.accessibility.AccessibilityNodeInfoCompat.AccessibilityActionCompat)) method via [`AccessibilityNodeInfoCompat`](https://developer.android.com/reference/androidx/core/view/accessibility/AccessibilityNodeInfoCompat).

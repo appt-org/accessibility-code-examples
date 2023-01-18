@@ -2,6 +2,10 @@
 
 Links should be accessible for users of assistive technologies. When accessibility is not taken into account, users might not be able to find or activate links.
 
+## WCAG
+
+Relates to 2.4.4
+
 ## Android
 
 On Android, links should be embedded inside an [`URLSpan`](https://developer.android.com/reference/android/text/style/URLSpan.html).

@@ -2,6 +2,10 @@
 
 Content should adapt to increased spacing between lines, words, letters, and paragraphs. This helps users with effectively reading text.
 
+## WCAG
+
+Relates to 1.4.12
+
 ## Android
 
 On Android, you can use the following attribute to increase text spacing:
