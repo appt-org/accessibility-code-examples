@@ -1,4 +1,4 @@
-# Add transcript
+# Transcript
 
 Videos should contain a transcript to allow users to read what is shown in media, such as a video or podcast.
 
