@@ -8,7 +8,8 @@ This repository contains the code samples of [Appt.org](https://appt.org), a pla
 - [React Native code samples](https://appt.org/en/docs/react-native/samples)
 - [Xamarin code samples](https://appt.org/en/docs/xamarin/samples)
 
-> **Star this repository to raise awareness!**
+> [!NOTE]
+> ⭐ Star this repository to raise awareness! ⭐
 
 ## Contribute
 
