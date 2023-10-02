@@ -6,3 +6,7 @@ element.accessibilityTraits = .header
 element.accessibilityTraits = .link
 element.accessibilityTraits = .image
 ```
+You can also combine more than one trait.
+```swift
+element.accessibilityTraits = [.button, .selected]
+```

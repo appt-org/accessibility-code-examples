@@ -17,3 +17,10 @@ let customRotor = UIAccessibilityCustomRotor(name: "Appt rotor") { predicate in
 }
 accessibilityCustomRotors = [customRotor]
 ```
+You can use the [`accessibilityActivate`](https://developer.apple.com/documentation/objectivec/nsobject/1615165-accessibilityactivate) method to determine the action on the element when the user doubletaps.
+```swift
+    override func accessibilityActivate() -> Bool {
+        anyFunction()
+        return true // true if the element was activated or false if it was not
+    }
+```

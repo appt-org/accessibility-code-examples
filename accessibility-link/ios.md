@@ -14,3 +14,8 @@ attributedString.addAttribute(.link, value: url, range: range)
 let label = UILabel()
 label.attributedText = attributedString
 ```
+
+To make your app more accessible, you can also set the [`accessibilityTraits`](https://developer.apple.com/documentation/objectivec/nsobject/1615202-accessibilitytraits) as [`.link`](https://developer.apple.com/documentation/uikit/uiaccessibilitytraits/1620178-link):
+```swift
+label.accessibilityTraits = .link
+```

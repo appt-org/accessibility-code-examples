@@ -30,3 +30,9 @@ extension UIFont {
     }
 }
 ```
+
+`UILabel`, `UITextField` and `UITextView` have a property called [`adjustsFontForContentSizeCategory`](https://developer.apple.com/documentation/uikit/uicontentsizecategoryadjusting/1771731-adjustsfontforcontentsizecategor). If you set it as `true`,  the component automatically updates its font when the device's content size category changes.
+
+```swift
+label.adjustsFontForContentSizeCategory = true
+```
