@@ -29,7 +29,7 @@ We welcome contributors to add more code samples. Please follow these steps:
        - Xamarin: `xamarin`
        - Jetpack Compose: `jetpack-compose`
        - SwiftUI: `swift-ui`
-       - MAUI .NET: `maui-net`
+       - .NET MAUI: `net-maui`
    - Add your code sample to the relevant markdown file.
      - Start with a brief explanation and link to relevant resources.
      - Add one or more code blocks, identify the programming language, e.g. `kotlin`.
