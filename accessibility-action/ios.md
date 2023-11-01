@@ -1,4 +1,4 @@
-On iOS, you can use [`UIAccessibilityCustomAction`](https://developer.apple.com/documentation/uikit/uiaccessibilitycustomaction) to add custom actions for assistive technologies. You can also use [`UIAccessibilityCustomRotor`](https://developer.apple.com/documentation/uikit/uiaccessibilitycustomrotor) to add custom actions to the [VoiceOver rotor](https://beta.appt.org/en/docs/ios/features/voiceover).
+On iOS, you can use [`UIAccessibilityCustomAction`](https://developer.apple.com/documentation/uikit/uiaccessibilitycustomaction) to add custom actions for assistive technologies. You can also use [`UIAccessibilityCustomRotor`](https://developer.apple.com/documentation/uikit/uiaccessibilitycustomrotor) to add custom actions to the [VoiceOver rotor](https://beta.appt.org/en/docs/ios/features/voiceover). Furthermore, you can use the [`accessibilityActivate`](https://developer.apple.com/documentation/objectivec/nsobject/1615165-accessibilityactivate) method to override the action that happens when a user activates an element, e.g. by double tapping with the screen reader.
 
 ```swift
 // Custom action
@@ -16,11 +16,10 @@ let customRotor = UIAccessibilityCustomRotor(name: "Appt rotor") { predicate in
     // Logic
 }
 accessibilityCustomRotors = [customRotor]
-```
-You can use the [`accessibilityActivate`](https://developer.apple.com/documentation/objectivec/nsobject/1615165-accessibilityactivate) method to determine the action on the element when the user doubletaps.
-```swift
-    override func accessibilityActivate() -> Bool {
-        anyFunction()
-        return true // true if the element was activated or false if it was not
-    }
+
+// Custom activation
+override func accessibilityActivate() -> Bool {
+    // Logic
+    return true // True if the element was activated, false if not
+}
 ```
