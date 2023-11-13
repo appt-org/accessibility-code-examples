@@ -1,3 +1,5 @@
+# Localization - Flutter
+
 With Flutter, you can use the various methods to load resources in your desired locale. This is especially important for users of screen readers. The example below shows a simple implementation to handle this without using any dependencies.
 
 ```dart

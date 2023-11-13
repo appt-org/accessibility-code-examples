@@ -1,3 +1,5 @@
+# Input keyboard type - Xamarin
+
 In Xamarin.Forms, you can set a keyboard type by using the [`Keyboard`](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.inputview.keyboard?view=xamarin-forms#xamarin-forms-inputview-keyboard) property.
 
 The following [`Keyboard properties`](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.keyboard?view=xamarin-forms#properties) are defined:

@@ -1,3 +1,5 @@
+# Accessibility focus indicator - Android
+
 On Android, you can adjust colors when an element receives focus. However, it's not possible to change the focus indicator of assistive technologies. Users can adjust their preferences in the system settings of Android.
 
 You can use a [`ColorStateList`](https://developer.android.com/guide/topics/resources/color-list-resource) to change colors based on the element state. An element moves into the [`state_focused`](https://developer.android.com/reference/android/graphics/drawable/StateListDrawable#attr_android:state_focused) whenever it receives focus.

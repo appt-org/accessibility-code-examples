@@ -1,3 +1,5 @@
+# Input content type - React Native
+
 In React Native,there are different properties for Android and iOS to set the content type. For Android, you can use the [`autoComplete`](https://reactnative.dev/docs/textinput#autocomplete-android) property. For iOS, you can use the [`textContentType`](https://reactnative.dev/docs/textinput#textcontenttype-ios) property.
 
 Available values for `autoComplete` on Android:

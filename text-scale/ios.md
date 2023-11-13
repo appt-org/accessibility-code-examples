@@ -1,3 +1,5 @@
+# Scale text - iOS
+
 On iOS, you can use [Dynamic Font Size](https://developer.apple.com/documentation/uikit/uifont/scaling_fonts_automatically) to scale text. By using this function, the font size is adjusted to the preferences of the user. If you're using your own font, you can use the [`scaledFont`](https://developer.apple.com/documentation/uikit/uifontmetrics/2877385-scaledfont) method from [`UIFontMetrics`](https://developer.apple.com/documentation/uikit/uifontmetrics) to calculate the font size.
 
 Text elements such as `UILabel`, `UITextField` and `UITextView` have a property called [`adjustsFontForContentSizeCategory`](https://developer.apple.com/documentation/uikit/uicontentsizecategoryadjusting/1771731-adjustsfontforcontentsizecategor). If you set it to `true`,  the element automatically updates its font when the device's content size category changes.

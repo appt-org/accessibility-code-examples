@@ -1,3 +1,5 @@
+# Input keyboard type - iOS
+
 On iOS, you can set a keyboard type by using the [`keyboardType`](https://developer.apple.com/documentation/uikit/uitextinputtraits/1624457-keyboardtype) property.
 
 The following types are defined:

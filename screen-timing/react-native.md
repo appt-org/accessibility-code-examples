@@ -1,3 +1,5 @@
+# Adjustable timing - React Native
+
 In React Native, the [`react-native-root-toast`](https://github.com/magicismight/react-native-root-toast) is often used to display temporary messages. The display duration might be too short for people to read or hear the message.
 
 We recommend use the `SnackBar` in `react-native-paper` instead. Set the `duration` to [`Number.MAX_SAFE_INTEGER`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER) to keep it visible. Don't forget to add a close button.

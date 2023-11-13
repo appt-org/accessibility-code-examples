@@ -1,3 +1,5 @@
+# Keyboard shortcuts - Xamarin
+
 Xamarin does not have support for hardware keyboard events. However, you can intercept key events inside the Android and iOS application.
 
 - Android: hook into [`onKeyUp`](https://learn.microsoft.com/en-us/dotnet/api/android.app.activity.onkeyup?view=xamarin-android-sdk-12) inside `MainActivity.cs`

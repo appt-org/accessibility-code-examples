@@ -1,3 +1,5 @@
+# Scale text - Flutter
+
 Flutter automatically scales the text on the screen to the text size set by the user. We recommend using [`ThemeData`](https://api.flutter.dev/flutter/material/ThemeData-class.html) to use the same text sizes and fonts everywhere.
 
 Try to avoid using the `textScaleFactor` property because it overrides the text scale factor preferred by the user. The default factor is `1.0`, but can go as high as `4.0` for some users. Restricting the number means that some users might not be able to read the text.

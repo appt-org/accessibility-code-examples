@@ -1,3 +1,5 @@
+# Captions - React Native
+
 In React Native, you can use the [React-Native-Video](https://github.com/react-native-video/react-native-video/blob/master/API.md#texttracks) package to add captions in `.vtt`, `.ttml` and `.srt` formats. It is advised to use `.vtt` as it is supported on both Android and iOS.
 
 ```jsx

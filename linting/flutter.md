@@ -1,3 +1,5 @@
+# Linting - Flutter
+
 Flutter ships with a built-in linter named [`flutter_lints`](https://docs.flutter.dev/release/breaking-changes/flutter-lints-package). Run `flutter analyze .` in the root of a project to return all usages of deprecated code.
 
 If possible, always update Flutter to the newest version.

@@ -1,3 +1,5 @@
+# Accessibility state - Android
+
 On Android, you can use the [`setAccessibilityDelegate`](https://developer.android.com/reference/androidx/core/view/ViewCompat#setAccessibilityDelegate(android.view.View,androidx.core.view.AccessibilityDelegateCompat)) method of [`ViewCompat`](https://developer.android.com/reference/androidx/core/view/ViewCompat) to get a reference to [`AccessibilityNodeInfoCompat`](https://developer.android.com/reference/androidx/core/view/accessibility/AccessibilityNodeInfoCompat). This object contains many useful accessibility related methods.
 
 You can set an accessibility state by using the [`setStateDescription`](https://developer.android.com/reference/androidx/core/view/accessibility/AccessibilityNodeInfoCompat#setStateDescription(java.lang.CharSequence)) method. A convenience method is available in `ViewCompat`, which is also named  [`setStateDescription`](https://developer.android.com/reference/androidx/core/view/ViewCompat#setStateDescription(android.view.View,java.lang.CharSequence)).

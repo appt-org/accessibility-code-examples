@@ -1,3 +1,5 @@
+# Linting - React Native
+
 React Native ships a built-in linter named [`ESLint`](https://eslint.org/).
 
 If possible, always update React Native to the newest version.

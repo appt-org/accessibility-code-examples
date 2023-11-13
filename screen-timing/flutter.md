@@ -1,3 +1,5 @@
+# Adjustable timing - Flutter
+
 In Flutter, a [`SnackBar`](https://api.flutter.dev/flutter/material/SnackBar-class.html) is often used display temporary messages. The display duration might be too short for people to read or hear the message.
 
 We recommend displaying messages by using an [`AlertDialog`](https://api.flutter.dev/flutter/material/AlertDialog-class.html). Or, when using a `Snackbar`, you can set the duration to "`infinite`". Don't forget to add a close button for both options.

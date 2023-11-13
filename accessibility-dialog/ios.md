@@ -1,3 +1,5 @@
+# Accessibility dialog - iOS
+
 On iOS, you can [show alerts](https://developer.apple.com/design/human-interface-guidelines/ios/views/alerts/) by using [`UIAlertController`](https://developer.apple.com/documentation/uikit/uialertcontroller). Set the `style` to [`alert`](https://developer.apple.com/documentation/uikit/uialertcontroller/style/alert) to display a  dialog. You should always add a close action in the [`cancel`](https://developer.apple.com/documentation/uikit/uialertaction/style/cancel) style. The focus of assistive technologies is automatically trapped inside the alert while it's visible.
 
 ```swift

@@ -1,3 +1,5 @@
+# Accessibility announcement - Android
+
 On Android, you can post an accessibility message by using the [`AccessibilityManager`](https://developer.android.com/reference/android/view/accessibility/AccessibilityManager) object. Create an [`AccessibilityEvent`](https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent), set the type to [`AccessibilityEvent.TYPE_ANNOUNCEMENT`](https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent#TYPE_ANNOUNCEMENT) and supply a message.
 
 ```kotlin

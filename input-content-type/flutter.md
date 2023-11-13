@@ -1,3 +1,5 @@
+# Input content type - Flutter
+
 In Flutter, you can set a content type by using the [`autoFillHints`](https://api.flutter.dev/flutter/services/AutofillHints-class.html) property. 
 
 It's important to note that constants are platform dependent and don't work the same everywhere, or even at all.

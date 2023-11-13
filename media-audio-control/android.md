@@ -1,3 +1,5 @@
+# Audio control - Android
+
 In Android apps, you should always be able to control audio. When using [`MediaPlayer`](https://developer.android.com/reference/android/media/MediaPlayer), you should implement buttons to call the [`start`](https://developer.android.com/reference/android/media/MediaPlayer#start()), [`pause`](https://developer.android.com/reference/android/media/MediaPlayer#pause()) and [`stop`](https://developer.android.com/reference/android/media/MediaPlayer#stop()) methods.
 
 It is a best practice to play audio through the correct channel. Android has introduced [`AudioAttributes`](https://developer.android.com/reference/android/media/AudioAttributes) as a replacement of the `STREAM` types defined in [AudioManager](https://developer.android.com/reference/android/media/AudioManager).

@@ -1,3 +1,5 @@
+# Input content type - iOS
+
 On iOS, you can set a content type by using the [`textContentType`](https://developer.apple.com/documentation/uikit/uitextinputtraits/1649656-textcontenttype) property.
 
 The following values are defined in [`UITextContentType`](https://developer.apple.com/documentation/uikit/uitextcontenttype):

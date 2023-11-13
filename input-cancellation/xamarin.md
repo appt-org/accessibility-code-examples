@@ -1,3 +1,5 @@
+# Input cancellation - Xamarin
+
 In Xamarin.Forms, be careful when building a [`CustomRenderer`](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/custom-renderer/) to detect touch events. Make sure not to use the down event for actions. For tap events, you should use [`TapGestureRecognizer`](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.tapgesturerecognizer?view=xamarin-forms).
 
 ```csharp

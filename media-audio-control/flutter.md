@@ -1,3 +1,5 @@
+# Audio control - Flutter
+
 In Flutter apps you should always be able to control audio. Two popular options for playing media are [`video_player`](https://pub.dev/packages/video_player) and [`just_audio`](https://pub.dev/packages/just_audio). Both packages have options for controlling audio through `play()` and `pause()` methods.
 
 ```dart

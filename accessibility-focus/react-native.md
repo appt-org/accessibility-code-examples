@@ -1,3 +1,5 @@
+# Accessibility focus - React Native
+
 In React Native you can move accessibility focus by using the [`setAccessibilityFocus`](https://reactnative.dev/docs/accessibilityinfo#setaccessibilityfocus) method from the [`AccessibilityInfo class`](https://reactnative.dev/docs/accessibilityinfo). This method requires a `reactTag`, which you can find by calling the `findNodeHandle` method.
 
 ```tsx

@@ -1,3 +1,5 @@
+# Accessibility action - React Native
+
 In React Native, you can add [`accessibility actions`](https://reactnative.dev/docs/accessibility#accessibility-actions) using the `accessibilityActions` and `onAccessibilityAction` properties.
 
 ```jsx

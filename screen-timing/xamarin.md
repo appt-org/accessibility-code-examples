@@ -1,3 +1,5 @@
+# Adjustable timing - Xamarin
+
 In Xamarin, the `SnackBar` view from the [`Xamarin.CommunityToolkit`](https://github.com/xamarin/XamarinCommunityToolkit) is often used to display temporary messages. The display duration might be too short for people to read or hear the message.
 
 When using `SnackBar`, set the `Duration` to `Int32.MaxValue`. Or, use [`DisplayAlert`](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.page.displayalert?view=xamarin-forms) method to show an alert instead.

@@ -1,3 +1,5 @@
+# Dark mode - React Native
+
 With React Native, you can detect dark mode by checking if the [`Appearance.getColorScheme()`](https://reactnative.dev/docs/appearance#getcolorscheme) method returns `dark`.
 
 When defining a [`ThemeProvider`](https://reactnativeelements.com/docs/customization/themprovider) you can return a different theme when dark mode is active.

@@ -1,3 +1,5 @@
+# Localization - Xamarin
+
 With Xamarin, you can use [`CultureInfo`](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo?view=net-6.0) to set a language. For more information, see [String and Image localization in Xamarin Forms](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/localization/text?pivots=windows).
 
 ```csharp

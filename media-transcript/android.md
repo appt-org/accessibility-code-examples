@@ -1,3 +1,5 @@
+# Transcript - Android
+
 On Android, you can use a [`TextView`](https://developer.android.com/reference/android/widget/TextView) to display written text. Don't forget to put it in a [ScrollView](https://developer.android.com/reference/android/widget/ScrollView), to make the text scrollable.
 
 ```xml

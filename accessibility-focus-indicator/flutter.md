@@ -1,3 +1,5 @@
+# Accessibility focus indicator - Flutter
+
 In Flutter, you can adjust colors when an element receives focus. However, it's not possible to change the focus indicator of assistive technologies. Users can adjust their preferences in the system settings on Android and iOS.
 
 You can change colors based on [`MaterialState`](https://api.flutter.dev/flutter/material/MaterialState.html). For a button, you could add a [`ButtonStyle`](https://api.flutter.dev/flutter/material/ButtonStyle-class.html) to change the color when in [`.focused`](https://api.flutter.dev/flutter/material/MaterialState.html#focused) state.

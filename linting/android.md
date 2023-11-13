@@ -1,3 +1,5 @@
+# Linting - Android
+
 On Android you can use [`AndroidLint`](https://developer.android.com/studio/write/lint) to improve the quality of your code.
 
 Check if you are using outdated code. In Android Studio you can check this by selecting the following menu options:

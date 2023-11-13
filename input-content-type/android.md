@@ -1,3 +1,5 @@
+# Input content type - Android
+
 On Android, you can set a content type by using the [`android:optimizeForAutoFill`](https://developer.android.com/reference/android/R.styleable#View_autofillHints) property.
 
 The following values are defined:

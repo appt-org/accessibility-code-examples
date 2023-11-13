@@ -1,3 +1,5 @@
+# Dark mode - Xamarin
+
 With Xamarin, you can detect dark mode by checking if the [`RequestedTheme`](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.application.requestedtheme?view=xamarin-forms) property equals [`OSAppTheme.Dark`](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.osapptheme?view=xamarin-forms#fields).
 
 In `XAML` you can use [`AppThemeBinding`](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/xaml/markup-extensions/consuming#appthemebinding-markup-extension) to define different resources for dark mode.

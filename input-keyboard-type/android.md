@@ -1,3 +1,5 @@
+# Input keyboard type - Android
+
 On Android, you can set a keyboard type by using the [`android:inputType`](https://developer.android.com/reference/android/widget/TextView.html#attr_android:inputType) property. You can combine values with each other.
 
 The following constants are defined:

@@ -1,3 +1,5 @@
+# Screen orientation - iOS
+
 On iOS, make sure all [`UIInterfaceOrientationMask`](https://developer.apple.com/documentation/uikit/uiinterfaceorientationmask) values are used for the [`UISupportedInterfaceOrientations`](https://developer.apple.com/documentation/bundleresources/information_property_list/uisupportedinterfaceorientations) key inside the `Info.plist` file.
 
 To listen to orientation changes, subscribe to [`orientationDidChangeNotification`](https://developer.apple.com/documentation/uikit/uidevice/1620025-orientationdidchangenotification). Check the device orientation using [`UIDevice.current.orientation`](https://developer.apple.com/documentation/uikit/uidevice/1620053-orientation).

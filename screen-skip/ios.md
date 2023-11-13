@@ -1,3 +1,5 @@
+# Skip content - iOS
+
 On iOS, skipping content is mostly relevant to [`VoiceOver`](https://appt.org/en/docs/ios/features/voiceover) users. VoiceOver includes a `rotor` which allows users to jump to the following content types:
 
 - Headers

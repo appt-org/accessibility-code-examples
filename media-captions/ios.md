@@ -1,3 +1,5 @@
+# Captions - iOS
+
 On iOS, [`AVPlayer`](https://developer.apple.com/documentation/avfoundation/avplayer) offers support to [add captions](https://developer.apple.com/documentation/avfoundation/media_playback_and_selection/adding_subtitles_and_alternative_audio_tracks). Users can [automatically turn on subtitles](https://support.apple.com/nl-nl/guide/iphone/iph3e2e23d1/ios) via System Preferences.
 
 The code example below shows a basic implementation of adding captions.

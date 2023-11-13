@@ -1,3 +1,5 @@
+# Captions - Android
+
 On Android, captions can be added by using [`TimedText`](https://developer.android.com/reference/android/media/TimedText) inside a [`MediaPlayer`](https://developer.android.com/reference/android/media/MediaPlayer). The code example below shows a basic example.
 
 ```kotlin

@@ -1,3 +1,5 @@
+# Screen title - Xamarin
+
 With Xamarin Forms, we recommend setting an appropriate [`Title`](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.page.title?view=xamarin-forms#xamarin-forms-page-title) for each [`ContentPage`](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.contentpage?view=xamarin-forms).
 
 ```xml

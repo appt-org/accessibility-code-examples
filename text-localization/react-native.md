@@ -1,3 +1,5 @@
+# Localization - React Native
+
 In React Native, there is no standard for loading resources in your desired language. Various packages are available to help you achieve this. You can use [expo-localization](https://docs.expo.dev/versions/latest/sdk/localization) in combination with [i18n-js](https://github.com/fnando/i18n-js) to get the device locale and set translations for your app.
 
 ```jsx

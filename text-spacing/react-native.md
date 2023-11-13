@@ -1,3 +1,5 @@
+# Text spacing - React Native
+
 React Native has a couple of attributes to adjust text spacing:
 
 - [`letterSpacing`](https://reactnative.dev/docs/text-style-props#letterspacing): set spacing between letters

@@ -1,3 +1,5 @@
+# Input keyboard type - Flutter
+
 In Flutter, you can set a keyboard type by using the [`keyboardType`](https://api.flutter.dev/flutter/material/TextField/keyboardType.html) property.
 
 The following values are defined in [`TextInputType`](https://api.flutter.dev/flutter/services/TextInputType-class.html):

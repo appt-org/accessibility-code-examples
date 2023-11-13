@@ -1,3 +1,5 @@
+# Dark mode - Flutter
+
 With Flutter, you can detect dark mode by checking if the [`platformBrightness`](https://api.flutter.dev/flutter/widgets/MediaQueryData/platformBrightness.html) has been set to [`Brightness.dark`](https://api.flutter.dev/flutter/dart-ui/Brightness.html#values).
 
 When defining an `App`, you can define a `darkTheme` to letter Flutter automatically use dark mode resources.

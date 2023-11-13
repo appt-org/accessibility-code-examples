@@ -1,3 +1,5 @@
+# Text spacing - Xamarin
+
 Xamarin Forms has a couple of attributes to adjust text spacing:
 
 - [`CharacterSpacing`](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.label.characterspacing?view=xamarin-forms): set spacing between characters.

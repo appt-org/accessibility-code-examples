@@ -1,3 +1,5 @@
+# Accessibility label - Xamarin
+
 In Xamarin Forms, you can set an accessibility label by using the [`AutomationProperties.Name`](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/accessibility/automation-properties#automationpropertiesname) property.
 
 If another element is used to display the label, the [`AutomationProperties.LabeledBy`](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/accessibility/automation-properties#automationpropertieslabeledby) property be used to link a label. Unfortunately, `LabeledBy` only works on Android.

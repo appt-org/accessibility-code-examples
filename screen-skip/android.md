@@ -1,3 +1,5 @@
+# Skip content - Android
+
 On Android, skipping content is mostly relevant to [`TalkBack`](https://appt.org/en/docs/android/features/talkback) users. TalkBack includes a `local context menu` which allows users to jump to the following content types:
 
 - Headings

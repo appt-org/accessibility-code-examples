@@ -1,3 +1,5 @@
+# Input predictable - Android
+
 On Android, be careful when using [`TextWatcher`](https://developer.android.com/reference/android/text/TextWatcher) methods. Do not trigger a change of context when text changes.
 
 ```kotlin

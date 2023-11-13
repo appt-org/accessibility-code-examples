@@ -1,3 +1,5 @@
+# Screen orientation - React Native
+
 In React Native, multiple screen orientations are enabled by default. Locking screen orientation is handled in native code:
 
 - For Android, remove instances of the `android:screenOrientation` attribute.
