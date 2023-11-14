@@ -1,6 +1,6 @@
 # Accessibility role - .NET MAUI
 
-.Net Maui does not have built-in support for setting an accessibility role.
+.NET MAUI does not have built-in support for setting an accessibility role.
 
 By intercepting the handler changed event you can change the role of a custom component.
 
