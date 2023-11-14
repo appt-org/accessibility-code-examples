@@ -25,7 +25,7 @@ As an alternative, you can link a label by setting [`IsInAccessibleTree`](https:
 
 ```
 
-NB: SemanticProperties.Description wordt ALTIJD voorgelezen, onafhankelijk van de waarde van AutomationProperties.IsInAccessibleTree. In onderstaand geval zal dus de tekst uit Description voorgelezen worden.
+NB: ***SemanticProperties.Description*** will supersede the value of ***AutomationProperties.IsInAccessibleTree***. Below the text from *SemanticProperties.Description* will be spoken despite of the value of *AutomationProperties.IsInAccessibleTree*.
 
 ```xml
             <Label
