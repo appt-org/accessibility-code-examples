@@ -4,7 +4,7 @@
 
 By intercepting the handler changed event you can change the role of a custom component.
 
- Component.xaml
+ **Component.xaml**
  ```xml
     <StackLayout AutomationProperties.IsInAccessibleTree="False" BindableLayout.ItemsSource="{Binding Steps}">
         <BindableLayout.ItemTemplate>
@@ -29,7 +29,7 @@ By intercepting the handler changed event you can change the role of a custom co
 ---
 Write the Android specific code for Frame_HandlerChanged in a partial class and set the native attributes to set the role.
 
-***Component.Android.cs***
+**Component.Android.cs**
 ```c#
 public partial class Component
 {
@@ -78,7 +78,7 @@ public class CustomFrameDelegate : AccessibilityDelegateCompatWrapper
 ---
 Write the iOS specific code for Frame_HandlerChanged in a partial class and set the native attributes to set the role.
 
-***Component.iOS.cs***
+**Component.iOS.cs**
 ```c#
 public partial class Component
 {
