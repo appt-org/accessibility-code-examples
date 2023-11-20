@@ -45,13 +45,14 @@ public partial class PinTilesCodeEntryView
     {
         if (editor != null)
         {
-            editor.ContentDescription = "Email";
+            editor.ContentDescription = "E-mail code";
+            var semantics = $"{editor.Length()} of {txt.MaxLength}";
 
             if (Android.OS.Build.VERSION.SdkInt >= Android.OS.BuildVersionCodes.R)
             {
-                editor.StateDescription = $"{editor.Length()} of {txt.MaxLength}";
-                SemanticScreenReader.Announce($"{editor.ContentDescription} {editor.StateDescription}");
+                editor.StateDescription = semantics;
             }
+            SemanticScreenReader.Announce($"{editor.ContentDescription} {semantics}");
         }
     }
 }
@@ -63,9 +64,7 @@ private void Entry_HandlerChanged(object? sender, EventArgs? e)
 {
     if (sender == txt && txt.Handler?.PlatformView is UITextField textField)
     {
-        textField.AccessibilityLabel = "E-mail";
-        textField.AccessibilityLanguage = ((IApp)Application.Current!).GeneralPreferences.Language;
-
+        textField.AccessibilityLabel = "E-mail code";
         textField.EditingChanged += TextField_EditingChanged;
     }
 }
@@ -77,7 +76,7 @@ private void TextField_EditingChanged(object? sender, EventArgs e)
         var length = textField.Text?.Length ?? 0;
         var semantics = $"{length} of {txt.MaxLength}";
         
-        textField.AccessibilityLabel = CodeType.Translate();
+        textField.AccessibilityLabel = "E-mail code";
         textField.AccessibilityValue = $"{textField.Text}, {semantics}";
 
         SemanticScreenReader.Announce($"{textField.AccessibilityLabel} {textField.AccessibilityValue}");
