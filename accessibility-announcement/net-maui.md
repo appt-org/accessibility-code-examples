@@ -57,9 +57,9 @@ Another possibility is to make an A11YService with a delayed Speak function. For
             }
             catch (Exception e)
             {
-                // Doe niets, oorzaak: MauiContext must be set on parent
+                // Sometimes we get an exception: MauiContext must be set on parent
                 System.Diagnostics.Debug.WriteLine($"!!!!!!!!=======> A11YService.Android.Speak exception: {e.Message}");
             }
         }
     }
-```
+```                                 
