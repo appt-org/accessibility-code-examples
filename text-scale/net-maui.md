@@ -1,7 +1,14 @@
 # Scale text - .NET MAUI
 
-By default, .NET Multi-platform App UI (.NET MAUI) apps use the Open Sans font on each platform. However, this default can be changed, and additional fonts can be registered for use in an app.
+All controls that display text automatically apply font scaling. The scale is based on the font size preference set in the Android or iOS operating system.
 
-All controls that display text automatically use font scaling, which means that an app's UI reflects text scaling preferences set in the operating system.
+By default, .NET MAUI apps use the `Open Sans` font on each platform. However, this default can be changed by registering additional fonts in your app.
 
-All you have to know about fonts and how to use them you can find this on ['.NET MAUI Fonts'](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/fonts?view=net-maui-8.0). 
+You can find additional guidance in the ['.NET MAUI fonts article'](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/fonts?view=net-maui-8.0). 
+
+```csharp
+<Label Text="Appt"
+       FontSize="18"
+       FontAutoScalingEnabled="True"
+       FontFamily="Custom" />
+```
