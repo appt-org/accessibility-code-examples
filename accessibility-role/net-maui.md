@@ -4,61 +4,35 @@
 
 By intercepting the handler changed event you can change the role of a custom component.
 
- **Component.xaml**
- ```xml
-    <StackLayout AutomationProperties.IsInAccessibleTree="False" BindableLayout.ItemsSource="{Binding Steps}">
-        <BindableLayout.ItemTemplate>
-            <DataTemplate x:Name="Model" x:DataType="model:Step">
-                <controls:BorderedFrame
-                    Padding="0"
-                    BackgroundColor="Transparent"
-                    CornerRadius="10"
-                    HandlerChanged="Frame_HandlerChanged"
-                    HasShadow="False"
-                    IsEnabled="{Binding IsActive}">
-                    <Grid...>
-                    </Grid>
-                    <Frame.GestureRecognizers>
-                        <TapGestureRecognizer Command="{Binding Command}" />
-                    </Frame.GestureRecognizers>
-                </controls:BorderedFrame>
-            </DataTemplate>
-        </BindableLayout.ItemTemplate>
-    </StackLayout>
+```xml title="Component.xaml"
+<StackLayout>
+  <BindableLayout.ItemTemplate>
+    <DataTemplate>
+      <controls:BorderedFrame
+        HandlerChanged="Frame_HandlerChanged">
+        <Grid...>
+        </Grid>
+        <Frame.GestureRecognizers>
+          <TapGestureRecognizer/>
+        </Frame.GestureRecognizers>
+      </controls:BorderedFrame>
+    </DataTemplate>
+  </BindableLayout.ItemTemplate>
+</StackLayout>
 ```
----
-Write the Android specific code for Frame_HandlerChanged in a partial class and set the native attributes to set the role.
 
-**Component.Android.cs**
-```c#
+Partial class on Android:
+
+```c# title="Component.Android.cs"
 public partial class Component
 {
-    void Frame_HandlerChanged(System.Object sender, System.EventArgs e)
+  void Frame_HandlerChanged(System.Object sender, System.EventArgs e)
+  {
+    if (sender is Frame frame && frame.Handler?.PlatformView is Android.Widget.FrameLayout view)
     {
-        if (sender is Frame frame && frame.Handler?.PlatformView is Android.Widget.FrameLayout view)
-        {
-            ViewCompat.SetAccessibilityDelegate(view, new CustomFrameDelegate(ViewCompat.GetAccessibilityDelegate(view)));
-            ConfigFrame(frame);
-        }
+      ViewCompat.SetAccessibilityDelegate(view, new CustomFrameDelegate(ViewCompat.GetAccessibilityDelegate(view)));
     }
-    private void ConfigFrame(Frame? frame)
-    {
-        if (frame != null && frame.Handler != null && frame.Handler.PlatformView is Android.Widget.FrameLayout view)
-        {
-            if (frame!.IsEnabled)
-            {
-                view.Focusable = true;
-                view.Clickable = true;
-                view.Click -= FrameClicked;
-                view.Click += FrameClicked;
-            }
-            else
-            {
-                view.Clickable = false;
-                view.Focusable = false;
-            }
-        }
-    }
+  }
 }
 
 public class CustomFrameDelegate : AccessibilityDelegateCompatWrapper
@@ -75,35 +49,19 @@ public class CustomFrameDelegate : AccessibilityDelegateCompatWrapper
     }
 }
 ```
----
-Write the iOS specific code for Frame_HandlerChanged in a partial class and set the native attributes to set the role.
 
-**Component.iOS.cs**
-```c#
+Partial class on iOS:
+
+```c# title="Component.iOS.cs"
 public partial class Component
 {
-    void Frame_HandlerChanged(System.Object sender, System.EventArgs e)
+  void Frame_HandlerChanged(System.Object sender, System.EventArgs e)
+  {
+    if (sender is Frame frame && frame.Handler != null)
     {
-        if (sender is Frame frame && frame.Handler != null)
-        {
-            var uiButton = (UIView)frame.Handler.PlatformView!;
-            var subTitle = frame.FindByName<Label>("SubTitle").Text;
-
-            if (frame.IsEnabled && frame.FindByName("Title") is Label label)
-            {
-                uiButton.UserInteractionEnabled = true;
-                uiButton.AccessibilityTraits = UIAccessibilityTrait.Button;
-                uiButton.AccessibilityLabel = $"{SemanticProperties.GetDescription(label)}, {subTitle}";
-            }
-            else
-            {
-                uiButton.UserInteractionEnabled = false;
-                uiButton.AccessibilityTraits = UIAccessibilityTrait.None;
-                uiButton.AccessibilityLabel = "";
-                var tapGesture = (TapGestureRecognizer)frame.GestureRecognizers.First(g => g is TapGestureRecognizer);
-                frame.GestureRecognizers.Remove(tapGesture);
-            }
-        }
+      var view = (UIView)frame.Handler.PlatformView!;
+      view.AccessibilityTraits = UIAccessibilityTrait.Button;
     }
+  }
 }
 ```

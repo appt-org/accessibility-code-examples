@@ -1,12 +1,15 @@
 # Accessibility group - .NET MAUI
 
-On .NET MAUI you can group items together either by setting **AutomationProperties.IsInAccessibleTree** to true or by setting **SemanticProperties.Description**.
+In React Native, you can group elements together by using the [`accessible`](https://reactnative.dev/docs/accessibility#accessible) prop. An [`accessibilityLabel`](https://reactnative.dev/docs/accessibility#accessibilitylabel) should be set for grouped elements.
+
+In .NET MAUI you can group items together by setting `AutomationProperties.IsInAccessibleTree` to `true`. You also need to set a `SemanticProperties.Description` for the grouped elements.
 
 ```xml
 <HorizontalStackLayout
     x:Name="MenuButtonLayout"
     AutomationId="MenuButton"
     AutomationProperties.IsInAccessibleTree="True"
+    SemanticProperties.Description="Menu container"
     Padding="0,0,5,0">
     <Image
         x:Name="MenuImage"
@@ -26,6 +29,13 @@ On .NET MAUI you can group items together either by setting **AutomationProperti
     </HorizontalStackLayout.GestureRecognizers>
 </HorizontalStackLayout>
 ```
-If you only use ***IsInaccessibleTree="True"*** then on iOS it will read "Button". On Android however it will read "Menu image, menu label, double tap to activate".
 
-After replacing ***AutomationProperties.IsInAccessibleTree="True"*** with ***SemanticProperties.Description="Menu container"*** it will read on iOS: "Menu container, Button" and on Android: "Menu container, double tap to activate".
+When you only use `IsInaccessibleTree="True"` the following descriptions will be read by the screen reader:
+
+- iOS: "Button"
+- Android: "Menu image, menu label, double tap to activate"
+
+When you also provide `SemanticProperties.Description="Menu container"`, the descriptions will be:
+
+- iOS: "Menu container, Button"
+- Android: "Menu container, double tap to activate"

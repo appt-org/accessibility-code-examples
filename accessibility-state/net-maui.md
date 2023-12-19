@@ -1,85 +1,44 @@
 # Accessibility state - .NET MAUI
 
-.NET MAUI does not have built-in support to indicate the accessibility state. 
+.NET MAUI does not have built-in support to indicate an accessibility state.
 
-By intercepting the handler changed event you can change the StateDescription (Android) or AccessibilityValue (iOS).
+By intercepting the handler changed event you can set the `StateDescription` on Android or `AccessibilityValue` on iOS.
 
-**CustomEntry.xaml**
-```xml
-    <Entry
-        x:Name="txt"
-        HandlerChanged="Entry_HandlerChanged"
-        HeightRequest="48"
-        IsSpellCheckEnabled="false"
-        MaxLength="40"
-        Text="{Binding Text}" />
+```xml title="CustomEntry.xaml"
+<Entry
+  x:Name="Field"
+  HandlerChanged="Entry_HandlerChanged"
+  Text="{Binding Text}" />
 ```
 
-**CustomEntry.xaml.Android.cs**
-```c#
+Partial class on Android:
+
+```c# title="CustomEntry.xaml.Android.cs"
 public partial class PinTilesCodeEntryView
 {
-    private AndroidX.AppCompat.Widget.AppCompatEditText? editor;
+  private AndroidX.AppCompat.Widget.AppCompatEditText? editor;
 
-    private void Entry_HandlerChanged(object? sender, EventArgs? e)
+  private void Entry_HandlerChanged(object? sender, EventArgs? e)
+  {
+    if (sender.Handler?.PlatformView is AndroidX.AppCompat.Widget.AppCompatEditText field)
     {
-        if (sender == txt && txt.Handler?.PlatformView is AndroidX.AppCompat.Widget.AppCompatEditText editField)
-        {
-            if (editor == null)
-            {
-                editor = editField;
-                editor.TextChanged += HandleTextChanged;
-
-                // No fullscreen editing in landscape-mode
-                editor.ImeOptions = Microsoft.Maui.Controls.Platform.Android.ImeActionExtensions.ToPlatform(Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific.ImeFlags.NoFullscreen);
-            }
-
-            if (Android.OS.Build.VERSION.SdkInt >= Android.OS.BuildVersionCodes.R)
-                editor.StateDescription = $"{editor.Length()} of {txt.MaxLength}";
-
-            editor.Hint = null;
-        }
+      if (Android.OS.Build.VERSION.SdkInt >= Android.OS.BuildVersionCodes.R)
+      {
+        field.StateDescription = "Custom value";
+      } 
     }
-
-    private void HandleTextChanged(object? sender, Android.Text.TextChangedEventArgs e)
-    {
-        if (editor != null)
-        {
-            editor.ContentDescription = "E-mail code";
-            var semantics = $"{editor.Length()} of {txt.MaxLength}";
-
-            if (Android.OS.Build.VERSION.SdkInt >= Android.OS.BuildVersionCodes.R)
-            {
-                editor.StateDescription = semantics;
-            }
-            SemanticScreenReader.Announce($"{editor.ContentDescription} {semantics}");
-        }
-    }
+  }
 }
 ```
 
-**CustomEntry.xaml.iOS.cs**
-```c#
+Partial class on iOS:
+
+```c# title="CustomEntry.xaml.iOS.cs"
 private void Entry_HandlerChanged(object? sender, EventArgs? e)
 {
-    if (sender == txt && txt.Handler?.PlatformView is UITextField textField)
-    {
-        textField.AccessibilityLabel = "E-mail code";
-        textField.EditingChanged += TextField_EditingChanged;
-    }
-}
-
-private void TextField_EditingChanged(object? sender, EventArgs e)
-{
-    if (sender is UITextField textField)
-    {
-        var length = textField.Text?.Length ?? 0;
-        var semantics = $"{length} of {txt.MaxLength}";
-        
-        textField.AccessibilityLabel = "E-mail code";
-        textField.AccessibilityValue = $"{textField.Text}, {semantics}";
-
-        SemanticScreenReader.Announce($"{textField.AccessibilityLabel} {textField.AccessibilityValue}");
-    }
+  if (sender.Handler?.PlatformView is UITextField field)
+  {
+    field.AccessibilityValue = "Custom value";
+  }
 }
 ```
