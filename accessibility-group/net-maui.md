@@ -1,7 +1,5 @@
 # Accessibility group - .NET MAUI
 
-In React Native, you can group elements together by using the [`accessible`](https://reactnative.dev/docs/accessibility#accessible) prop. An [`accessibilityLabel`](https://reactnative.dev/docs/accessibility#accessibilitylabel) should be set for grouped elements.
-
 In .NET MAUI you can group items together by setting `AutomationProperties.IsInAccessibleTree` to `true`. You also need to set a `SemanticProperties.Description` for the grouped elements.
 
 ```xml
