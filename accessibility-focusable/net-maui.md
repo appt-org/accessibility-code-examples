@@ -6,7 +6,7 @@ Also, the [`ExcludedWithChildren`] (https://learn.microsoft.com/en-us/dotnet/api
 
 ```xml
 <Image 
-  AutomationProperties.IsInAccessibleTree="False" />
+  AutomationProperties.IsInAccessibleTree="false" />
 
 <StackLayout AutomationProperties.ExcludedWithChildren="true">
 ...

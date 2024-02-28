@@ -8,4 +8,4 @@ In .NET MAUI, an accessibility hint is set by using the [`SemanticProperties.Hin
 ```
 
 **Warning:**
-The Hint property conflicts with the Entry.Placeholder property on Android, which both map to the same platform property. Therefore, setting a different Hint value to the Entry.Placeholder value isn't recommended.
+The `Hint` property conflicts with the `Entry.Placeholder` property on Android, which both map to the same platform property. Therefore, setting a different Hint value to the Entry.Placeholder value isn't recommended.
