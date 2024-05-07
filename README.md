@@ -1,3 +1,6 @@
+> [!IMPORTANT]  
+> The code samples in this repository are now part of the [appt-website repository](https://github.com/appt-org/appt-website). At the moment of writing, they are placed in the [`/src/data/code-samples` folder](https://github.com/appt-org/appt-website/tree/develop/src/data/code-samples).
+
 # Accessibility code samples for mobile apps
 
 This repository contains the code samples of [Appt.org](https://appt.org), a platform for app accessibility. The Appt® platform is an initiative of the [Appt Foundation](https://appt.org/en/about), a non-profit organisation.
